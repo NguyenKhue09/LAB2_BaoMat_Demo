@@ -7,13 +7,19 @@ const Post = require("../models/post.model")
  */
 async function getAllPost() {
 
-    const posts = await Post.find((err) => {
-        if(!err) console.log("Get all post successful!");
-        
-        else console.log("Get all post failed!");
-    });
+    try {
+        const posts = await Post.find({});
 
-    return posts;
+        if(!posts) {
+            throw "Post not found!";
+        }
+
+        return posts;
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+   
 }
 
 
