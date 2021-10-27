@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 1050;
+const connectDB = require("./config/db-connect");
 
 // Libraries
 const cookieParser = require("cookie-parser");
@@ -9,11 +10,13 @@ const session = require("express-session");
 // Routes
 const loginRoute = require("./routes/login.route");
 
+// ConnectDB
+connectDB();
+
 require("dotenv").config(); // to use .env file
 app.set("view engine", "html");
 app.engine("html", require("ejs").renderFile);
 app.set("views", "./views"); // view
-app.use(express.static("public"));
 app.use(cookieParser(process.env.SECRET_COOKIES));
 app.use(
   session({
@@ -36,3 +39,5 @@ app.listen(port, () => {
   // check if the website is runnig
   console.log(`The app is listening at port ${port}`);
 });
+
+app.use(express.static("public"));
