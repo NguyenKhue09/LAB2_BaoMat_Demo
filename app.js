@@ -3,12 +3,18 @@ const app = express();
 const port = 1050;
 const connectDB = require("./config/db-connect");
 
+//static
+app.use(express.static("public"));
 // Libraries
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 
+// Services
+const postService = require("./services/post.service");
+
 // Routes
 const loginRoute = require("./routes/login.route");
+const signUpRoute = require("./routes/signup.route");
 
 // ConnectDB
 connectDB();
@@ -27,17 +33,18 @@ app.use(
   })
 );
 
+const allPosts = await postService.getAllPost();
 app.get("/", (req, res) => {
-  res.render("authentication", {
+  res.render("index", {
     user: res.locals.user,
+    posts: allPosts,
   });
 });
 
 app.use("/login", loginRoute);
+app.use("/signup", signUpRoute);
 
 app.listen(port, () => {
   // check if the website is runnig
   console.log(`The app is listening at port ${port}`);
 });
-
-app.use(express.static("public"));
