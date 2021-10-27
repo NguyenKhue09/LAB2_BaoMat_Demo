@@ -7,8 +7,6 @@ function connectDB() {
     const mongooseOptions = {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        useFindAndModify: false,
-        useCreateIndex: true 
     }
 
     mongoose.connect(process.env.DB_URI, mongooseOptions, (err) => {
