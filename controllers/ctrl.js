@@ -28,20 +28,21 @@ module.exports.postLoginUser = async (req, res) => {
     }
 
     const user = await service.findOneUser({email: email});
-
     if (!user) {
         errors.push("User doesn't exist");
     } else if (user.password != password) {
         errors.push("Wrong password!! Please try again");
     }
-
-    if (error.length != 0 ) {
+    
+    if (errors.length != 0 ) {
+        
         res.render('authentication', {
             errors: errors, 
             values: req.body
         })
+        return;
     }
-
+    
     res.cookie('userId', user._id, {
         signed: true
     });
@@ -62,7 +63,6 @@ module.exports.signUpUser = async (req, res) => {
 
 // Sign up user controller 
 module.exports.postSignUpUser = async (req, res) => {
-    console.log(req.body);
     const Userdata = {
         email: req.body.email,
         password: req.body.password

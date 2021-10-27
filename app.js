@@ -41,7 +41,7 @@ app.use(
 );
 
 
-app.get("/", async (req, res) => {
+app.get("/", authMiddleware.requireUser, async (req, res) => {
     const allPosts = await postService.getAllPost();
 
     res.render("index", {
@@ -50,7 +50,7 @@ app.get("/", async (req, res) => {
   });
 });
 
-//app.use(authMiddleware.requireUser);
+// app.use();
 app.use("/login", loginRoute);
 app.use("/signup", signUpRoute);
 
