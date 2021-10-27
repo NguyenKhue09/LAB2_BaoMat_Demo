@@ -62,6 +62,7 @@ module.exports.signUpUser = async (req, res) => {
 
 // Sign up user controller 
 module.exports.postSignUpUser = async (req, res) => {
+    console.log(req.body);
     const Userdata = {
         email: req.body.email,
         password: req.body.password
@@ -75,12 +76,6 @@ module.exports.postSignUpUser = async (req, res) => {
 
     if (!req.body.email || !req.body.password) {
         errors.push("Please fill in all informations")
-        res.render('authentication', {
-            error: "Error! Please try again"
-        });
-        return;
-    } else if(password != rePassword) {
-        errors.push("Re-password doesn't match");
         res.render('authentication', {
             error: "Error! Please try again"
         });
