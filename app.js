@@ -7,6 +7,9 @@ const connectDB = require('./config/db-connect');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 
+// Services
+const postService = require('./services/post.service');
+
 // Routes
 const loginRoute = require('./routes/login.route');
 const signUpRoute = require('./routes/signup.route');
@@ -27,9 +30,11 @@ app.use(session({
 }));
 
 
+const allPosts = await postService.getAllPost();
 app.get('/', (req, res) => {
     res.render('index', {
-        user: res.locals.user
+        user: res.locals.user,
+        posts: allPosts
     });
 });
 

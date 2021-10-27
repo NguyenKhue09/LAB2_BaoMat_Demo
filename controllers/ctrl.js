@@ -2,7 +2,7 @@ const service = require('../services/user.service');
 // Controllers
 
 // Get login page
-module.exports.loginUser = (req, res) => {
+module.exports.loginUser = async (req, res) => {
     if(req.signedCookies.userId || req.signedCookies.adminId) {
         res.redirect('/');
         return;
@@ -12,7 +12,7 @@ module.exports.loginUser = (req, res) => {
 }
 
 // Post login info
-module.exports.postLoginUser = (req, res) => {
+module.exports.postLoginUser = async (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
 
@@ -27,7 +27,7 @@ module.exports.postLoginUser = (req, res) => {
         return;
     }
 
-    const user = service.findOneUser({email: email});
+    const user = await service.findOneUser({email: email});
 
     if (!user) {
         errors.push("User doesn't exist");
@@ -51,7 +51,7 @@ module.exports.postLoginUser = (req, res) => {
 }
 
 // Sign up user 
-module.exports.signUpUser = (req, res) => {
+module.exports.signUpUser = async (req, res) => {
     if(res.locals.user || res.locals.admin) {
         delete res.locals.user;
         delete res.locals.admin;
@@ -61,7 +61,7 @@ module.exports.signUpUser = (req, res) => {
 }
 
 // Sign up user controller 
-module.exports.postSignUpUser = (req, res) => {
+module.exports.postSignUpUser = async (req, res) => {
     const Userdata = {
         email: req.body.email,
         password: req.body.password
@@ -86,7 +86,7 @@ module.exports.postSignUpUser = (req, res) => {
         return;
     }
 
-    const registedUser = service.registerUser(Userdata);
+    const registedUser = await service.registerUser(Userdata);
 
     if (!registedUser) {
         res.render('register', {
