@@ -7,7 +7,7 @@ module.exports.loginUser = async (req, res) => {
         res.redirect('/');
         return;
     };
-    
+
     res.render('authentication');
 }
 
@@ -28,20 +28,21 @@ module.exports.postLoginUser = async (req, res) => {
     }
 
     const user = await service.findOneUser({email: email});
-
     if (!user) {
         errors.push("User doesn't exist");
     } else if (user.password != password) {
         errors.push("Wrong password!! Please try again");
     }
-
-    if (error.length != 0 ) {
+    
+    if (errors.length != 0 ) {
+        
         res.render('authentication', {
             errors: errors, 
             values: req.body
         })
+        return;
     }
-
+    
     res.cookie('userId', user._id, {
         signed: true
     });
@@ -75,13 +76,7 @@ module.exports.postSignUpUser = async (req, res) => {
 
     if (!req.body.email || !req.body.password) {
         errors.push("Please fill in all informations")
-        res.render('register', {
-            error: "Error! Please try again"
-        });
-        return;
-    } else if(password != rePassword) {
-        errors.push("Re-password doesn't match");
-        res.render('register', {
+        res.render('authentication', {
             error: "Error! Please try again"
         });
         return;
@@ -90,7 +85,7 @@ module.exports.postSignUpUser = async (req, res) => {
     const registedUser = await service.registerUser(Userdata);
     const user = await service.findOneUser({email: email});
     if (!registedUser) {
-        res.render('register', {
+        res.render('authentication', {
             error: "Error! Please try again"
         }); 
     } else {
@@ -104,5 +99,6 @@ module.exports.postSignUpUser = async (req, res) => {
 
 module.exports.logout = (req, res) => {
     res.clearCookie('userId');
+    delete req.session.user;
     res.redirect('/');
 }
