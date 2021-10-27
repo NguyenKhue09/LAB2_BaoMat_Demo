@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express() 
 const port = 1050;
+const connectDB = require('./config/db-connect');
 
 // Libraries
 const cookieParser = require('cookie-parser');
@@ -8,6 +9,9 @@ const session = require('express-session');
 
 // Routes
 const loginRoute = require('./routes/login.route');
+
+// ConnectDB
+connectDB();
 
 require('dotenv').config(); // to use .env file 
 app.set('view engine', 'html');
