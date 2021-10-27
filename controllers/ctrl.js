@@ -7,7 +7,7 @@ module.exports.loginUser = async (req, res) => {
         res.redirect('/');
         return;
     };
-    
+
     res.render('authentication');
 }
 
@@ -75,13 +75,13 @@ module.exports.postSignUpUser = async (req, res) => {
 
     if (!req.body.email || !req.body.password) {
         errors.push("Please fill in all informations")
-        res.render('register', {
+        res.render('authentication', {
             error: "Error! Please try again"
         });
         return;
     } else if(password != rePassword) {
         errors.push("Re-password doesn't match");
-        res.render('register', {
+        res.render('authentication', {
             error: "Error! Please try again"
         });
         return;
@@ -90,7 +90,7 @@ module.exports.postSignUpUser = async (req, res) => {
     const registedUser = await service.registerUser(Userdata);
     const user = await service.findOneUser({email: email});
     if (!registedUser) {
-        res.render('register', {
+        res.render('authentication', {
             error: "Error! Please try again"
         }); 
     } else {
@@ -104,5 +104,6 @@ module.exports.postSignUpUser = async (req, res) => {
 
 module.exports.logout = (req, res) => {
     res.clearCookie('userId');
+    delete req.session.user;
     res.redirect('/');
 }
