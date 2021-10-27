@@ -12,6 +12,9 @@ const session = require("express-session");
 // Services
 const postService = require("./services/post.service");
 
+// Middlewares
+const authMiddleware = require('./Middlewares/authentication.middleware');
+
 // Routes
 const loginRoute = require("./routes/login.route");
 const signUpRoute = require("./routes/signup.route");
@@ -34,9 +37,9 @@ app.use(
 );
 
 
-app.get("/", async (req, res) => {
+app.get("/", authMiddleware.requireUser, async (req, res) => {
     const allPosts = await postService.getAllPost();
-  
+
     res.render("index", {
     user: res.locals.user,
     posts: allPosts,
