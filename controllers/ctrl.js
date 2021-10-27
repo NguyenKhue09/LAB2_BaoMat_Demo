@@ -57,4 +57,15 @@ module.exports.postSignUpUser = (req, res) => {
         email: req.body.email,
         password: req.body.password
     };
+
+    const registedUser = service.registerUser(Userdata);
+
+    if (!registedUser) {
+        res.render('register', {
+            error: "Error! Please try again"
+        })
+    } else {
+        req.session.user = user;
+        res.redirect('/');
+    }
 }
