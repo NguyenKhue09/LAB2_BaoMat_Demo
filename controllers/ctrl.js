@@ -39,5 +39,22 @@ module.exports.postLoginUser = (req, res) => {
 
     req.session.user = user;
     res.redirect('/');
+}
 
+// Sign up user 
+module.exports.signUpUser = (req, res) => {
+    if(res.locals.user || res.locals.admin) {
+        delete res.locals.user;
+        delete res.locals.admin;
+    };
+
+    res.render('registration');
+}
+
+// Sign up user controller 
+module.exports.postSignUpUser = (req, res) => {
+    const Userdata = {
+        email: req.body.email,
+        password: req.body.password
+    };
 }
