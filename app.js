@@ -8,6 +8,7 @@ const session = require('express-session');
 
 // Routes
 const loginRoute = require('./routes/login.route');
+const signUpRoute = require('./routes/signup.route');
 
 require('dotenv').config(); // to use .env file 
 app.set('view engine', 'html');
@@ -29,7 +30,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/login', loginRoute);
-
+app.use('/signup', signUpRoute);
 
 app.listen(port, () => {
     // check if the website is runnig

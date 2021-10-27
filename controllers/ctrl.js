@@ -16,9 +16,18 @@ module.exports.postLoginUser = (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
 
-    const user = service.findOneUser({email: email});
-
     let errors = [];
+
+    if (!email || !password) {
+        errors.push("Please fill in all informations");
+        res.render('login', {
+            errors: errors, 
+            values: req.body
+        });
+        return;
+    }
+
+    const user = service.findOneUser({email: email});
 
     if (!user) {
         errors.push("User doesn't exist");
@@ -58,12 +67,31 @@ module.exports.postSignUpUser = (req, res) => {
         password: req.body.password
     };
 
+    const password = req.body.password;
+    const rePassword = req.body.rePassword;
+
+    let errors = [];
+
+    if (!req.body.email || !req.body.password) {
+        errors.push("Please fill in all informations")
+        res.render('register', {
+            error: "Error! Please try again"
+        });
+        return;
+    } else if(password != rePassword) {
+        errors.push("Re-password doesn't match");
+        res.render('register', {
+            error: "Error! Please try again"
+        });
+        return;
+    }
+
     const registedUser = service.registerUser(Userdata);
 
     if (!registedUser) {
         res.render('register', {
             error: "Error! Please try again"
-        })
+        }); 
     } else {
         req.session.user = user;
         res.redirect('/');
