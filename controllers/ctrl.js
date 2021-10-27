@@ -7,7 +7,7 @@ module.exports.loginUser = async (req, res) => {
         res.redirect('/');
         return;
     };
-
+    
     res.render('authentication');
 }
 
@@ -67,6 +67,7 @@ module.exports.postSignUpUser = async (req, res) => {
         password: req.body.password
     };
 
+    const email = req.body.email;
     const password = req.body.password;
     const rePassword = req.body.rePassword;
 
@@ -87,13 +88,21 @@ module.exports.postSignUpUser = async (req, res) => {
     }
 
     const registedUser = await service.registerUser(Userdata);
-
+    const user = await service.findOneUser({email: email});
     if (!registedUser) {
         res.render('register', {
             error: "Error! Please try again"
         }); 
     } else {
         req.session.user = user;
+        res.cookie('userId', user._id, {
+            signed: true
+        });
         res.redirect('/');
     }
+}
+
+module.exports.logout = (req, res) => {
+    res.clearCookie('userId');
+    res.redirect('/');
 }
