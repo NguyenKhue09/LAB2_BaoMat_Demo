@@ -33,5 +33,8 @@ async function getPostByUserId(userId) {
     return posts;
 }
 
-
+module.exports = {
+    getPostByUserId,
+    getAllPost
+}
 
