@@ -7,7 +7,7 @@ const Users = require('../models/user.model');
  */
 async function findOneUser(info) {
 
-    const userFound = await Users.find(info);
+    const userFound = await Users.findOne(info);
    
     if(userFound) console.log("Find  user successful!");
     else console.log("Find user failed!");
