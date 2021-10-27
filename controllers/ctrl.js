@@ -1,4 +1,4 @@
-const service = require('../services/service');
+const service = require('../services/user.service');
 // Controllers
 
 // Get login page
