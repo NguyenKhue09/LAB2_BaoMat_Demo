@@ -8,7 +8,7 @@ module.exports.loginUser = async (req, res) => {
         return;
     };
 
-    res.render('login');
+    res.render('authentication');
 }
 
 // Post login info
@@ -20,7 +20,7 @@ module.exports.postLoginUser = async (req, res) => {
 
     if (!email || !password) {
         errors.push("Please fill in all informations");
-        res.render('login', {
+        res.render('authentication', {
             errors: errors, 
             values: req.body
         });
@@ -36,7 +36,7 @@ module.exports.postLoginUser = async (req, res) => {
     }
 
     if (error.length != 0 ) {
-        res.render('login', {
+        res.render('authentication', {
             errors: errors, 
             values: req.body
         })

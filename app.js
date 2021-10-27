@@ -33,9 +33,11 @@ app.use(
   })
 );
 
-const allPosts = await postService.getAllPost();
-app.get("/", (req, res) => {
-  res.render("index", {
+
+app.get("/", async (req, res) => {
+    const allPosts = await postService.getAllPost();
+  
+    res.render("index", {
     user: res.locals.user,
     posts: allPosts,
   });
