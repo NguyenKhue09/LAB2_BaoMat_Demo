@@ -8,7 +8,7 @@ async function addComment(data) {
         const newComment = new Comment(data);
 
         const saveComment = await newComment.save().then(
-            async(err, comment) => {
+            async (err, comment) => {
                 await addCommentToPost(data.post, comment._id);
             }
         );

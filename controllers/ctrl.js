@@ -28,20 +28,21 @@ module.exports.postLoginUser = async (req, res) => {
     }
 
     const user = await service.findOneUser({email: email});
-
     if (!user) {
         errors.push("User doesn't exist");
     } else if (user.password != password) {
         errors.push("Wrong password!! Please try again");
     }
-
-    if (error.length != 0 ) {
+    
+    if (errors.length != 0 ) {
+        
         res.render('authentication', {
             errors: errors, 
             values: req.body
         })
+        return;
     }
-
+    
     res.cookie('userId', user._id, {
         signed: true
     });
@@ -50,7 +51,7 @@ module.exports.postLoginUser = async (req, res) => {
     res.redirect('/');
 }
 
-// Sign up user 
+// Get sign up user 
 module.exports.signUpUser = async (req, res) => {
     if(res.locals.user || res.locals.admin) {
         delete res.locals.user;
@@ -67,6 +68,7 @@ module.exports.postSignUpUser = async (req, res) => {
         password: req.body.password
     };
 
+    const email = req.body.email;
     const password = req.body.password;
     const rePassword = req.body.rePassword;
 
@@ -74,26 +76,29 @@ module.exports.postSignUpUser = async (req, res) => {
 
     if (!req.body.email || !req.body.password) {
         errors.push("Please fill in all informations")
-        res.render('register', {
-            error: "Error! Please try again"
-        });
-        return;
-    } else if(password != rePassword) {
-        errors.push("Re-password doesn't match");
-        res.render('register', {
+        res.render('authentication', {
             error: "Error! Please try again"
         });
         return;
     }
 
     const registedUser = await service.registerUser(Userdata);
-
+    const user = await service.findOneUser({email: email});
     if (!registedUser) {
-        res.render('register', {
+        res.render('authentication', {
             error: "Error! Please try again"
         }); 
     } else {
         req.session.user = user;
+        res.cookie('userId', user._id, {
+            signed: true
+        });
         res.redirect('/');
     }
+}
+
+module.exports.logout = (req, res) => {
+    res.clearCookie('userId');
+    delete req.session.user;
+    res.redirect('/');
 }
