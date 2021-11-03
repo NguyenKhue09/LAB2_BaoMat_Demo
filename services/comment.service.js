@@ -3,7 +3,22 @@ const Comment = require('../models/comment.model')
 
 
 async function addComment(data) {
+    try {
 
+        const newComment = new Comment(data);
+
+        const saveComment = await newComment.save();
+
+        if(saveComment) console.log('Add comment successful!');       
+        else    console.log('Add comment unsuccessful!');
+
+        return saveComment;
+
+    } catch (error) {
+        
+        console.log(error.message);
+        return null;
+    }
 }
 
 async function deleteCommentByPost(post) {

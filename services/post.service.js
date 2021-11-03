@@ -1,6 +1,25 @@
 const Post = require("../models/post.model")
 
 
+
+async function addPost(data) {
+    try {
+
+        const newPost = new Post(data);
+
+        const savePost = await newPost.save();
+
+        if(savePost) console.log('Add new post successful!');       
+        else    console.log("Add new post fail!");
+
+        return savePost;
+
+    } catch (error) {
+        console.log(error.message);
+        return null;
+    }
+}
+
 /**
  * 
  * 
@@ -133,11 +152,13 @@ async function addCommentToPost(postId, commentId) {
 
 
 module.exports = {
+    addPost,
     getPostByUserId,
     getAllPost,
     getPostByPage,
     updatePost,
-    deletePost
+    deletePost,
+    getNumberOfPost
 }
 
 
