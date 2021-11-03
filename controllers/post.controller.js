@@ -72,8 +72,7 @@ async function addComment (req, res) {
         console.log("Falied in adding comment to post");
     }
 
-    res.redirect(request.get('referer'));
-    // window.location.reload();
+    res.redirect('/');
 }
 
 
