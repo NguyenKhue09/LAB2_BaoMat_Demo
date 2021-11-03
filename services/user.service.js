@@ -36,7 +36,8 @@ async function findOneUser(info) {
 
     } catch (error) {
         
-        console.log(error.message)
+        console.log(error.message);
+        return null;
     }
 }
 
