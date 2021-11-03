@@ -51,7 +51,7 @@ module.exports.postLoginUser = async (req, res) => {
     res.redirect('/');
 }
 
-// Sign up user 
+// Get sign up user 
 module.exports.signUpUser = async (req, res) => {
     if(res.locals.user || res.locals.admin) {
         delete res.locals.user;
