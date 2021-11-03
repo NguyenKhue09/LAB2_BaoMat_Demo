@@ -9,7 +9,7 @@ async function addComment(data) {
 
         const saveComment = await newComment.save().then(
             (err, comment) => {
-                await addCommentToPost(data.post, comment.id);
+                await addCommentToPost(data.post, comment._id);
             }
         );
 
