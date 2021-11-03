@@ -1,3 +1,4 @@
+const postService = require('../services/post.service');
 
 async function initPost (req, res) {
     // Dữ liệu bài đang mới 
@@ -13,8 +14,18 @@ async function initPost (req, res) {
 async function deletePost (req, res) {
     const postId = req.body.id;
 
-    // Thực hiện xoá
+    const postInfo = await postService.getPostByUserId();
 
+    // Thực hiện xoá
+    const result = await postService.deletePost(postId);
+
+    if (result) {
+        console.log("Deleted post");
+    } else {
+        console.log("Falied in deleting post")
+    }
+
+    res.redirect('/');
 }
 
 async function updatePost (req, res) {

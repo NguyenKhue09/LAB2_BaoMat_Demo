@@ -52,7 +52,12 @@ app.use(
 
 
 app.get("/", async (req, res) => {
-    const allPosts = await postService.getAllPost();
+    let page = req.query.page;
+    if (page <= 0 || !page) {
+      page = 1;
+    }
+    
+    const allPosts = await postService.getPostByPage(page);
 
     res.render("index", {
     user: res.locals.user,
