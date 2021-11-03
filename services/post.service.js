@@ -147,6 +147,17 @@ async function updatePost(postId, newData) {
 
 async function addCommentToPost(postId, commentId) {
 
+    try {
+        const addComment = await Post.updateOne({_id: postId}, {$push: { comments: commentId}});
+
+        if(addComment) console.log("Add comment to post successful");
+        else throw "Add comment to post failed";
+        
+        return true;
+    } catch (error) {
+        console.log(error);
+        return false;
+    }
 }
 
 
@@ -158,7 +169,8 @@ module.exports = {
     getPostByPage,
     updatePost,
     deletePost,
-    getNumberOfPost
+    getNumberOfPost,
+    addCommentToPost
 }
 
 

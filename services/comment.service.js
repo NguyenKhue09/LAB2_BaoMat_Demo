@@ -7,7 +7,11 @@ async function addComment(data) {
 
         const newComment = new Comment(data);
 
-        const saveComment = await newComment.save();
+        const saveComment = await newComment.save().then(
+            (err, comment) => {
+                await addCommentToPost(data.post, comment.id);
+            }
+        );
 
         if(saveComment) console.log('Add comment successful!');       
         else    console.log('Add comment unsuccessful!');
@@ -41,5 +45,7 @@ async function deleteCommentByPost(post) {
 
 module.exports = {
     deleteCommentByPost,
-    addComment
+    addComment,
 }
+
+const {addCommentToPost} = require('../services/post.service');
