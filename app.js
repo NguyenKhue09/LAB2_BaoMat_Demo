@@ -56,12 +56,16 @@ app.get("/", async (req, res) => {
     if (page <= 0 || !page) {
       page = 1;
     }
-    
+
     const allPosts = await postService.getPostByPage(page);
+
+    const allPages = await postService.getNumberOfPost();
 
     res.render("index", {
     user: res.locals.user,
     posts: allPosts,
+    allPages: allPages,
+    currentPage: page,
     showTitle: true,
     layout: false,
   });

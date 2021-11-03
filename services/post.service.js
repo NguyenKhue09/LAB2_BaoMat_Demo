@@ -60,6 +60,17 @@ async function getPostByUserId(userId) {
     return posts;
 }
 
+async function getPostById(id) {
+
+    const posts = await Post.find({_id: id}, (err) => {
+        if(!err) console.log("Get post successful!");
+        
+        else console.log("Get post failed!");
+    }).populate('comments').populate('userPostId');
+
+    return posts;
+}
+
 async function getPostByPage(page) {
     try {
         if(page < 1) throw "Page must be bigger one";
@@ -158,7 +169,8 @@ module.exports = {
     getPostByPage,
     updatePost,
     deletePost,
-    getNumberOfPost
+    getNumberOfPost,
+    getPostById
 }
 
 
