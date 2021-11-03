@@ -55,11 +55,20 @@ app.use(
 );
 
 app.get("/", async (req, res) => {
-  const allPosts = await postService.getAllPost();
+  let page = req.query.page;
+  if (page <= 0 || !page) {
+    page = 1;
+  }
+
+  const allPosts = await postService.getPostByPage(page);
+
+  const allPages = await postService.getNumberOfPost();
 
   res.render("home", {
     user: res.locals.user,
     posts: allPosts,
+    allPages: allPages,
+    currentPage: page,
     showTitle: true,
     layout: false,
   });
