@@ -4,6 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forum </title>
+    <link rel="stylesheet" type="text/css" href="/styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,7 +30,7 @@
       style="background-color:#f050bb "
     >
       <div class="container-lg">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="/">Forum XSS</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -49,10 +57,14 @@
           </form>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Login</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/login"
+              >Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Register</a>
+              <a class="nav-link" href="/register">Register</a>
             </li>
 
           </ul>
@@ -60,7 +72,156 @@
       </div>
     </nav>
     <div class="container">
-      <p>hello</p>
+
+      <section style="background-color: #eee;">
+        <div class="container my-5 py-5">
+          <div class="row d-flex justify-content-center mb-5">
+            <div class="col-md-12 col-lg-10 col-xl-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex flex-start w-100">
+                    <form
+                      class="form-outline w-100"
+                      style="margin-bottom: 0 !important;"
+                    >
+                      <div>
+                        <label for="inputTitle" class="form-label">Title
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputTitle"
+                        />
+
+                      </div>
+                      <div class="mb-1">
+                        <label
+                          for="exampleInputPassword1"
+                          class="form-label"
+                        >Content</label>
+                        <textarea
+                          class="form-control"
+                          id="textAreaExample"
+                          rows="4"
+                          style="background: #fff;"
+                        ></textarea>
+                      </div>
+
+                      <div class="float-end mt-2 pt-1">
+                        <button type="button" class="btn btn-primary btn-sm">
+                          Post article
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-12 col-lg-10 col-xl-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex flex-start align-items-center">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg"
+                      alt="avatar"
+                      width="60"
+                      height="60"
+                    />
+                    <div>
+                      <h6 class="fw-bold text-primary mb-1">
+                        Cute Pig
+                      </h6>
+                      <p class="text-muted small mb-0">
+                        Shared publicly - Nov 2021
+                      </p>
+                    </div>
+                  </div>
+                  <h5 class="mt-2" style="font-weight: bold;">Happy Pola</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip consequat.
+                  </p>
+
+                  <div class="d-flex justify-content-start align-items-center">
+                    <i class="fas fa-comment"></i>
+                    <h6
+                      class="btn-comment"
+                      style="margin-bottom: 0 !important;"
+                    >
+                      Comment
+                    </h6>
+                  </div>
+                </div>
+                <div
+                  class="card-footer py-3 border-0 view-comment"
+                  style="background-color: #f8f9fa;"
+                >
+                  {{! list comment }}
+                  <div class="d-flex flex-start w-100">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg"
+                      alt="avatar"
+                      width="40"
+                      height="40"
+                    />
+                    <div class="form-outline w-100">
+                      <h6 class="fw-bold text-primary mb-1">
+                        Cute Pig
+                      </h6>
+                      <p class="mt-1 pb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip consequat.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-start w-100">
+                    <img
+                      class="rounded-circle shadow-1-strong me-3"
+                      src="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg"
+                      alt="avatar"
+                      width="40"
+                      height="40"
+                    />
+                    <div class="form-outline w-100">
+                      <textarea
+                        class="form-control"
+                        id="textAreaExample"
+                        rows="4"
+                        style="background: #fff;"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="float-end mt-2 pt-1">
+                    <button type="button" class="btn btn-primary btn-sm">
+                      Post comment
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <script type="text/javascript">
+      var btn_comment = document.querySelectorAll(".btn-comment"); var
+      details_view_comment = document.querySelectorAll(".view-comment");
+      btn_comment.forEach(function (btn, index) { btn.addEventListener("click",
+      function handle() { console.log(index); if
+      (details_view_comment[index].classList.contains('h-appear')) {
+      details_view_comment[index].classList.remove('h-appear'); } else {
+      details_view_comment[index].classList.add('h-appear'); } }); });
+    </script>
   </body>
 </html>
