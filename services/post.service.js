@@ -27,7 +27,7 @@ async function addPost(data) {
 async function getAllPost() {
 
     try {
-        const posts = await Post.find({}).populate({path:'comments', populate: {path: 'userComment', select: "email"}}).populate('userPostId');
+        const posts = await Post.find({}).populate({path:'comments', populate: {path: 'userComment', select: "email"}}).populate('userPostId', "email").lean();
 
         if(!posts) {
             throw "Post not found!";
