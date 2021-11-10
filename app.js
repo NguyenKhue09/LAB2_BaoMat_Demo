@@ -54,7 +54,7 @@ app.use(
   })
 );
 
-app.get("/", async (req, res) => {
+app.get("/", authMiddleware.requireUser, async (req, res) => {
   let page = req.query.page;
   if (page <= 0 || !page) {
     page = 1;

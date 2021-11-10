@@ -8,7 +8,9 @@ module.exports.loginUser = async (req, res) => {
         return;
     };
 
-    res.render('authentication');
+    res.render('authentication', {
+        layout: false,
+    });
 }
 
 // Post login info
@@ -22,7 +24,8 @@ module.exports.postLoginUser = async (req, res) => {
         errors.push("Please fill in all informations");
         res.render('authentication', {
             errors: errors, 
-            values: req.body
+            values: req.body,
+            layout: false,
         });
         return;
     }
@@ -38,7 +41,8 @@ module.exports.postLoginUser = async (req, res) => {
         
         res.render('authentication', {
             errors: errors, 
-            values: req.body
+            values: req.body,
+            layout: false,
         })
         return;
     }
@@ -58,7 +62,10 @@ module.exports.signUpUser = async (req, res) => {
         delete res.locals.admin;
     };
 
-    res.render('registration');
+    res.render('registration', {
+        showTitle: true,
+        layout: false,
+    });
 }
 
 // Sign up user controller 
@@ -77,7 +84,8 @@ module.exports.postSignUpUser = async (req, res) => {
     if (!req.body.email || !req.body.password) {
         errors.push("Please fill in all informations")
         res.render('authentication', {
-            error: "Error! Please try again"
+            error: "Error! Please try again",
+            layout: false,
         });
         return;
     }
@@ -86,7 +94,8 @@ module.exports.postSignUpUser = async (req, res) => {
     const user = await service.findOneUser({email: email});
     if (!registedUser) {
         res.render('authentication', {
-            error: "Error! Please try again"
+            error: "Error! Please try again",
+            layout: false,
         }); 
     } else {
         req.session.user = user;
