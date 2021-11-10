@@ -74,15 +74,14 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
     showTitle: true,
     layout: false,
   });
-  console.log(posts);
 });
 
 // app.use();
 app.use("/login", loginRoute);
 app.use("/signup", signUpRoute);
 app.use("/post", postRoute);
-const {getPostByPage} = require("./services/post.service");
-app.listen(port, async() => {
+const { getPostByPage } = require("./services/post.service");
+app.listen(port, async () => {
   // check if the website is runnig
   const post = await getPostByPage(1);
   console.log(post);

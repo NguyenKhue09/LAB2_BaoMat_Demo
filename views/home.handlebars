@@ -131,6 +131,7 @@
           </div>
           <div class="row d-flex justify-content-center">
             <div class="col-md-12 col-lg-10 col-xl-8">
+
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex flex-start align-items-center">
@@ -142,9 +143,7 @@
                       height="60"
                     />
                     <div>
-                      <h6 class="fw-bold text-primary mb-1">
-                        Cute Pig
-                      </h6>
+                      <h6 class="fw-bold text-primary mb-1"> Cute Pig </h6>
                       <p class="text-muted small mb-0">
                         Shared publicly - Nov 2021
                       </p>
@@ -157,15 +156,13 @@
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip consequat.
                   </p>
-
                   <div class="d-flex justify-content-start align-items-center">
                     <i class="fas fa-comment"></i>
                     <h6
                       class="btn-comment"
-                      style="margin-bottom: 0 !important;"
-                    >
-                      Comment
-                    </h6>
+                      style="margin-bottom: 0
+                !important;"
+                    > Comment </h6>
                   </div>
                 </div>
                 <div
@@ -182,9 +179,7 @@
                       height="40"
                     />
                     <div class="form-outline w-100">
-                      <h6 class="fw-bold text-primary mb-1">
-                        Cute Pig
-                      </h6>
+                      <h6 class="fw-bold text-primary mb-1"> Cute Pig </h6>
                       <p class="mt-1 pb-2">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -193,7 +188,6 @@
                       </p>
                     </div>
                   </div>
-
                   <div class="d-flex flex-start w-100">
                     <img
                       class="rounded-circle shadow-1-strong me-3"
@@ -215,24 +209,20 @@
                     <button type="button" class="btn btn-primary btn-sm">
                       Post comment
                     </button>
-
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </section>
     </div>
-
-    <script type="text/javascript">
-      var btn_comment = document.querySelectorAll(".btn-comment"); var
-      details_view_comment = document.querySelectorAll(".view-comment");
-      btn_comment.forEach(function (btn, index) { btn.addEventListener("click",
-      function handle() { console.log(index); if
-      (details_view_comment[index].classList.contains('h-appear')) {
-      details_view_comment[index].classList.remove('h-appear'); } else {
-      details_view_comment[index].classList.add('h-appear'); } }); });
+    <script>
+      $(function() { var source = $("#document-template").html(); var template =
+      Handlebars.compile(source); var html = template(data);
+      $('#DocumentResults').html(html); });
     </script>
+
   </body>
 </html>
