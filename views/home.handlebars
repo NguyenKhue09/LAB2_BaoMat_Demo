@@ -23,6 +23,13 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.js"
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"
+    ></script>
+
   </head>
   <body>
     <nav
@@ -132,87 +139,48 @@
           <div class="row d-flex justify-content-center">
             <div class="col-md-12 col-lg-10 col-xl-8">
 
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex flex-start align-items-center">
-                    <img
-                      class="rounded-circle shadow-1-strong me-3"
-                      src="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg"
-                      alt="avatar"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h6 class="fw-bold text-primary mb-1"> Cute Pig </h6>
-                      <p class="text-muted small mb-0">
-                        Shared publicly - Nov 2021
-                      </p>
-                    </div>
-                  </div>
-                  <h5 class="mt-2" style="font-weight: bold;">Happy Pola</h5>
+              <div id="results"></div>
+              <script id="document-template" type="text/x-handlebars-template">
+                {{#each posts}}
+                  <div class="card mb-3" > <div class="card-body"> <div
+                  class="d-flex flex-start align-items-center"> <img
+                  class="rounded-circle shadow-1-strong me-3"
+                  src="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg"
+                  alt="avatar" width="60" height="60" />
+                  {{#userPostId}}<div> <h6 class="fw-bold text-primary mb-1">{{email}}
+                    </h6> </div>{{/userPostId}}
+                  </div> <h5 class="mt-2" style="font-weight: bold;">{{title}}</h5>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip consequat.
-                  </p>
-                  <div class="d-flex justify-content-start align-items-center">
-                    <i class="fas fa-comment"></i>
-                    <h6
-                      class="btn-comment"
-                      style="margin-bottom: 0
-                !important;"
-                    > Comment </h6>
-                  </div>
-                </div>
-                <div
-                  class="card-footer py-3 border-0 view-comment"
-                  style="background-color: #f8f9fa;"
-                >
-                  {{! list comment }}
-                  <div class="d-flex flex-start w-100">
-                    <img
-                      class="rounded-circle shadow-1-strong me-3"
-                      src="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg"
-                      alt="avatar"
-                      width="40"
-                      height="40"
-                    />
-                    <div class="form-outline w-100">
-                      <h6 class="fw-bold text-primary mb-1"> Cute Pig </h6>
-                      <p class="mt-1 pb-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip consequat.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-start w-100">
-                    <img
-                      class="rounded-circle shadow-1-strong me-3"
-                      src="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg"
-                      alt="avatar"
-                      width="40"
-                      height="40"
-                    />
-                    <div class="form-outline w-100">
-                      <textarea
-                        class="form-control"
-                        id="textAreaExample"
-                        rows="4"
-                        style="background: #fff;"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="float-end mt-2 pt-1">
-                    <button type="button" class="btn btn-primary btn-sm">
-                      Post comment
-                    </button>
-                  </div>
-                </div>
-              </div>
-
+                  {{description}}
+                  </p> <div class="d-flex justify-content-start
+                  align-items-center" > <i class="fas fa-comment"></i> <h6
+                  class="btn-comment" style="margin-bottom: 0 !important;" >
+                  Comment </h6> </div> </div> <div class="card-footer py-3
+                  border-0 view-comment" style="background-color: #f8f9fa;" >
+                  {{#comments}}
+                    <div class="d-flex flex-start w-100"> <img
+                    class="rounded-circle shadow-1-strong me-3"
+                    src="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg"
+                    alt="avatar" width="40" height="40" /> <div
+                    class="form-outline w-100"> <h6 class="fw-bold text-primary
+                    mb-1"> Cute Pig </h6> <p class="mt-1 pb-2"> Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip consequat. </p> </div> </div>
+                  {{/comments}}
+                  <div class="d-flex flex-start w-100"> <img
+                  class="rounded-circle shadow-1-strong me-3"
+                  src="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg"
+                  alt="avatar" width="40" height="40" /> <form method="get"
+                  class="form-outline w-100"><input type="hidden" name="id" />
+                  <textarea class="form-control" id="textAreaExample" rows="4"
+                  name="text" style="background: #fff;" ></textarea><div
+                  class="float-end mt-2 pt-1"> <button type="submit" class="btn
+                  btn-primary btn-sm"> Post comment </button> </div> </form>
+                  </div> </div> </div>
+                {{/each}}
+              </script>
             </div>
           </div>
         </div>
@@ -220,8 +188,8 @@
     </div>
     <script>
       $(function() { var source = $("#document-template").html(); var template =
-      Handlebars.compile(source); var html = template(data);
-      $('#DocumentResults').html(html); });
+      Handlebars.compile(source); var html = template({});
+      $('#results').html(html); });
     </script>
 
   </body>

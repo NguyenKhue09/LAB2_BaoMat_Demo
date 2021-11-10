@@ -57,13 +57,13 @@ app.use(
 
 app.get("/", authMiddleware.requireUser, async (req, res) => {
   let page = req.query.page;
-  console.log(page);
+
   if (page <= 0 || !page) {
     page = 1;
   }
 
   const allPosts = await postService.getPostByPage(page);
-
+  console.log(allPosts);
   const allPages = await postService.getNumberOfPost();
 
   res.render("home", {
@@ -83,7 +83,7 @@ app.use("/post", postRoute);
 const { getPostByPage } = require("./services/post.service");
 app.listen(port, async () => {
   // check if the website is runnig
-  const post = await getPostByPage(1);
-  console.log(post);
+  // const post = await getPostByPage(1);
+  // console.log(post);
   console.log(`The app is listening at port ${port}`);
 });
