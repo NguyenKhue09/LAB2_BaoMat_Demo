@@ -27,7 +27,7 @@ async function addPost(data) {
 async function getAllPost() {
 
     try {
-        const posts = await Post.find({}).populate('comments').populate('userPostId');
+        const posts = await Post.find({}).populate({path:'comments', populate: {path: 'userComment', select: "email"}}).populate('userPostId');
 
         if(!posts) {
             throw "Post not found!";
@@ -76,7 +76,9 @@ async function getPostByPage(page) {
     try {
         if(page < 1) throw "Page must be bigger one";
         
-        const postList = await Post.find({}).limit(10).skip((page-1)*10).populate('comments').populate('userPostId').lean();
+        const postList = await Post.find({}).limit(10).skip((page-1)*10)
+                                    .populate({path:'comments', populate: {path: 'userComment', select: "email"}})
+                                    .populate('userPostId', "email").lean();
 
         if(!postList) throw "Page list not found!"
         return postList;
