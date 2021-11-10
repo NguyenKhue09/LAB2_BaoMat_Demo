@@ -55,19 +55,26 @@
               type="submit"
             >Search</button>
           </form>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/login"
-              >Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/register">Register</a>
-            </li>
+          {{#if user}}
+            <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+              {{user}}
+            </div>
+          {{else}}
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/login"
+                >Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+              </li>
 
-          </ul>
+            </ul>
+          {{/if}}
+
         </div>
       </div>
     </nav>
@@ -81,6 +88,8 @@
                 <div class="card-body">
                   <div class="d-flex flex-start w-100">
                     <form
+                      method="post"
+                      action="/addPost"
                       class="form-outline w-100"
                       style="margin-bottom: 0 !important;"
                     >
@@ -91,6 +100,7 @@
                           type="text"
                           class="form-control"
                           id="inputTitle"
+                          name="title"
                         />
 
                       </div>
@@ -104,11 +114,12 @@
                           id="textAreaExample"
                           rows="4"
                           style="background: #fff;"
+                          name="description"
                         ></textarea>
                       </div>
 
                       <div class="float-end mt-2 pt-1">
-                        <button type="button" class="btn btn-primary btn-sm">
+                        <button type="submit" class="btn btn-primary btn-sm">
                           Post article
                         </button>
                       </div>
