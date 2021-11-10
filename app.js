@@ -81,8 +81,10 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
 app.use("/login", loginRoute);
 app.use("/signup", signUpRoute);
 app.use("/post", postRoute);
-
-app.listen(port, () => {
+const {getPostByPage} = require("./services/post.service");
+app.listen(port, async() => {
   // check if the website is runnig
+  const post = await getPostByPage(1);
+  console.log(post);
   console.log(`The app is listening at port ${port}`);
 });

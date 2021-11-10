@@ -33,6 +33,7 @@ async function getAllPost() {
             throw "Post not found!";
         } else {
             console.log("Get all post success");
+            console.log(posts);
         }
 
         return posts;
@@ -74,8 +75,8 @@ async function getPostById(id) {
 async function getPostByPage(page) {
     try {
         if(page < 1) throw "Page must be bigger one";
-
-        const postList = await Post.find().limit(10).skip(page*10).lean();
+        
+        const postList = await Post.find({}).limit(10).skip((page-1)*10).populate('comments').populate('userPostId').lean();
 
         if(!postList) throw "Page list not found!"
         return postList;
