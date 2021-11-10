@@ -57,6 +57,7 @@ app.use(
 
 app.get("/", authMiddleware.requireUser, async (req, res) => {
   let page = req.query.page;
+  console.log(page);
   if (page <= 0 || !page) {
     page = 1;
   }
@@ -73,6 +74,7 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
     showTitle: true,
     layout: false,
   });
+  console.log(posts);
 });
 
 // app.use();
