@@ -20,6 +20,7 @@ const authMiddleware = require("./Middlewares/authentication.middleware");
 // Routes
 const loginRoute = require("./routes/login.route");
 const signUpRoute = require("./routes/signup.route");
+const postRoute = require("./routes/post.route");
 
 // ConnectDB
 connectDB();
@@ -77,6 +78,7 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
 // app.use();
 app.use("/login", loginRoute);
 app.use("/signup", signUpRoute);
+app.use("/post", postRoute);
 
 app.listen(port, () => {
   // check if the website is runnig
