@@ -20,6 +20,7 @@ const authMiddleware = require("./Middlewares/authentication.middleware");
 // Routes
 const loginRoute = require("./routes/login.route");
 const signUpRoute = require("./routes/signup.route");
+const postRoute = require("./routes/post.route");
 
 // ConnectDB
 connectDB();
@@ -54,8 +55,9 @@ app.use(
   })
 );
 
-app.get("/", async (req, res) => {
+app.get("/", authMiddleware.requireUser, async (req, res) => {
   let page = req.query.page;
+  console.log(page);
   if (page <= 0 || !page) {
     page = 1;
   }
@@ -72,14 +74,15 @@ app.get("/", async (req, res) => {
     showTitle: true,
     layout: false,
   });
+  console.log(posts);
 });
 
 // app.use();
 app.use("/login", loginRoute);
 app.use("/signup", signUpRoute);
-const {getAllPost} = require("./services/post.service");
-app.listen(port, async() => {
+app.use("/post", postRoute);
+
+app.listen(port, () => {
   // check if the website is runnig
-  await getAllPost();
   console.log(`The app is listening at port ${port}`);
 });

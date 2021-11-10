@@ -1,4 +1,6 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const comment = require("./comment.model");
+const users = require("./user.model");
 
 /**Post model */
 const postSchema = new mongoose.Schema(
@@ -15,11 +17,11 @@ const postSchema = new mongoose.Schema(
         },
         userPostId: {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'users'
+            ref: users
         },
         comments: [{
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'comment'
+            ref: comment
         }]
     }
 )
