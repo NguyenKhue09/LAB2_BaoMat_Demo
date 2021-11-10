@@ -77,8 +77,9 @@ app.get("/", async (req, res) => {
 // app.use();
 app.use("/login", loginRoute);
 app.use("/signup", signUpRoute);
-
-app.listen(port, () => {
+const {getAllPost} = require("./services/post.service");
+app.listen(port, async() => {
   // check if the website is runnig
+  await getAllPost();
   console.log(`The app is listening at port ${port}`);
 });
