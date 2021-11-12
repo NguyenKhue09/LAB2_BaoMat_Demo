@@ -63,7 +63,7 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
   }
 
   const allPosts = await postService.getPostByPage(page);
-  console.log(allPosts);
+  // console.log(res.locals.user);
   const allPages = await postService.getNumberOfPost();
 
   res.render("home", {

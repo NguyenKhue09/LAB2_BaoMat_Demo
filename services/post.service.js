@@ -1,7 +1,6 @@
 const Post = require("../models/post.model")
 
 
-
 async function addPost(data) {
     try {
 

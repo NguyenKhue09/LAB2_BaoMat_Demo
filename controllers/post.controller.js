@@ -1,4 +1,5 @@
 const postService = require('../services/post.service');
+const commentService = require('../services/comment.service');
 
 async function initPost (req, res) {
     // Dữ liệu bài đang mới 
@@ -56,15 +57,13 @@ async function updatePost (req, res) {
 
 // Đăng 1 bình luận mới 
 async function addComment (req, res) {
-    const postId = req.body.id;
-
     const newComment = {
         text: req.body.text,
         post: req.body.postId,
         userComment: req.signedCookies.userId,
     }
 
-    const result = await postService.addComment(postId);
+    const result = await commentService.addComment(newComment);
 
     if (result) {
         console.log("Added comment to post");
