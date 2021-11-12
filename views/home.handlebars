@@ -164,12 +164,12 @@
                     class="rounded-circle shadow-1-strong me-3"
                     src="https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg"
                     alt="avatar" width="40" height="40" /> <div
-                    class="form-outline w-100"> <h6 class="fw-bold text-primary
-                    mb-1"> Cute Pig </h6> <p class="mt-1 pb-2"> Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip consequat. </p> </div> </div>
+                    class="form-outline w-100">{{#userComment}}
+                      <h6 class="fw-bold text-primary mb-1">
+                      {{email}}
+                      </h6>{{/userComment}}
+                    <p class="mt-1 pb-2">
+                    {{text}}</p> </div> </div>
                   {{/comments}}
                   <div class="d-flex flex-start w-100"> <img
                   class="rounded-circle shadow-1-strong me-3"
