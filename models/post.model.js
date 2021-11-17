@@ -26,7 +26,7 @@ const postSchema = new mongoose.Schema(
     }
 )
 
-postSchema.createIndex({title: 'text'});
+postSchema.index({title: 'text'});
 
 const Post = mongoose.model('Post', postSchema);
 
