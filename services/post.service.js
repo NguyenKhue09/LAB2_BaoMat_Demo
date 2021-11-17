@@ -34,7 +34,7 @@ async function getAllPost() {
       throw "Post not found!";
     } else {
       console.log("Get all post success");
-      console.log(posts);
+      //console.log(posts);
     }
 
     return posts;
@@ -70,7 +70,7 @@ async function getPostById(id) {
     .populate("comments")
     .populate("userPostId");
 
-  console.log(post);
+  //console.log(post);
   return post;
 }
 
