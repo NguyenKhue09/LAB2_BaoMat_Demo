@@ -193,7 +193,7 @@ async function addCommentToPost(postId, commentId) {
 
 async function searchPosts(searchString) {
   try {
-    const posts = await Post.find({title: {$search: searchString}})
+    const posts = await Post.find({$text : {$search: searchString}})
       .populate({
         path: "comments",
         populate: { path: "userComment", select: "email" },
