@@ -32,65 +32,72 @@ async function initPost (req, res) {
     res.redirect('/');
 }
 
-async function deletePost (req, res) {
-    const postId = req.body.id;
+async function deletePost(req, res) {
+  const postId = req.body.id;
 
-    // Thực hiện xoá
-    const result = await postService.deletePost(postId);
+  // Thực hiện xoá
+  const result = await postService.deletePost(postId);
 
-    if (result) {
-        console.log("Deleted post");
-    } else {
-        console.log("Falied in deleting post");
-    }
+  if (result) {
+    console.log("Deleted post");
+  } else {
+    console.log("Falied in deleting post");
+  }
 
-    res.redirect('/');
+  res.redirect("/");
 }
 
-async function updatePost (req, res) {
-    const postId = req.body.id;
+async function updatePost(req, res) {
+  const postId = req.body.id;
 
-    const newData = {
-        title: req.body.title,
-        description: req.body.description,
-    }
+  const newData = {
+    title: req.body.title,
+    description: req.body.description,
+  };
 
-    // Cập nhật dữ liệu của bài post
-    const result = await postService.updatePost(postId, newData);
+  // Cập nhật dữ liệu của bài post
+  const result = await postService.updatePost(postId, newData);
 
-    if (result) {
-        console.log("Updated post");
-    } else {
-        console.log("Falied in updating post");
-    }
+  if (result) {
+    console.log("Updated post");
+  } else {
+    console.log("Falied in updating post");
+  }
 
-    res.redirect('/');
+  res.redirect("/");
 }
 
-// Đăng 1 bình luận mới 
-async function addComment (req, res) {
-    const newComment = {
-        text: req.body.text,
-        post: req.body.postId,
-        userComment: req.signedCookies.userId,
-    }
+// Đăng 1 bình luận mới
+async function addComment(req, res) {
+  const newComment = {
+    text: req.body.text,
+    post: req.body.postId,
+    userComment: req.signedCookies.userId,
+  };
 
-    const result = await commentService.addComment(newComment);
+  const result = await commentService.addComment(newComment);
 
-    if (result) {
-        console.log("Added comment to post");
-    } else {
-        console.log("Falied in adding comment to post");
-    }
+  if (result) {
+    console.log("Added comment to post");
+  } else {
+    console.log("Falied in adding comment to post");
+  }
 
-    res.redirect('/');
+  res.redirect("/");
 }
-
 
 module.exports = {
+<<<<<<< HEAD
     initPost,
     deletePost,
     updatePost,
     addComment,
     getPost,
 };
+=======
+  initPost,
+  deletePost,
+  updatePost,
+  addComment,
+};
+>>>>>>> c5673e0e728e97338ed195f157feae99cac921e9

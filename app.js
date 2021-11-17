@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 1050;
+const port = process.env.PORT || 1050;
 const connectDB = require("./config/db-connect");
 var exphbs = require("express-handlebars");
 
@@ -62,7 +62,7 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
   }
 
   const allPosts = await postService.getPostByPage(page);
-  // console.log(res.locals.user);
+  console.log(allPosts);
   const allPages = await postService.getNumberOfPost();
 
   res.render("home", {
