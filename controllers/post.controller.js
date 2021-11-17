@@ -1,35 +1,35 @@
-const postService = require('../services/post.service');
-const commentService = require('../services/comment.service');
+const postService = require("../services/post.service");
+const commentService = require("../services/comment.service");
 
-async function getPost (req, res) {
-    const id = req.params.postId;
+async function getPost(req, res) {
+  const id = req.params.postId;
+  console.log(id);
+  const post = await postService.getPostById(id);
 
-    const post = await postService.getPostById(id);
-
-    res.render('detailPost', {
-        post: post,
-        showTitle: true,
-        layout: false,
-    });
+  res.render("detailPost", {
+    post: post,
+    showTitle: true,
+    layout: false,
+  });
 }
 
-async function initPost (req, res) {
-    // Dữ liệu bài đang mới 
-    const newPost = {
-        title: req.body.title,
-        description: req.body.description,
-        userPostId: req.signedCookies.userId,
-    };
+async function initPost(req, res) {
+  // Dữ liệu bài đang mới
+  const newPost = {
+    title: req.body.title,
+    description: req.body.description,
+    userPostId: req.signedCookies.userId,
+  };
 
-    const result = await postService.addPost(newPost);
+  const result = await postService.addPost(newPost);
 
-    if (result) {
-        console.log("Created post");
-    } else {
-        console.log("Falied in creating post");
-    }
+  if (result) {
+    console.log("Created post");
+  } else {
+    console.log("Falied in creating post");
+  }
 
-    res.redirect('/');
+  res.redirect("/");
 }
 
 async function deletePost(req, res) {
@@ -87,9 +87,9 @@ async function addComment(req, res) {
 }
 
 module.exports = {
-    initPost,
-    deletePost,
-    updatePost,
-    addComment,
-    getPost,
+  initPost,
+  deletePost,
+  updatePost,
+  addComment,
+  getPost,
 };

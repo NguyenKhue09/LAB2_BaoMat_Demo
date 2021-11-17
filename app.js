@@ -21,7 +21,7 @@ const authMiddleware = require("./Middlewares/authentication.middleware");
 const loginRoute = require("./routes/login.route");
 const signUpRoute = require("./routes/signup.route");
 const postRoute = require("./routes/post.route");
-
+const logoutRoute = require("./routes/logout.route");
 // ConnectDB
 connectDB();
 
@@ -39,7 +39,7 @@ var hbs = exphbs.create({
 });
 
 require("dotenv").config(); // to use .env file
-app.set('view engine', 'pug');
+app.set("view engine", "pug");
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -62,7 +62,7 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
   }
 
   const allPosts = await postService.getPostByPage(page);
-  console.log(allPosts);
+  // console.log(allPosts);
   const allPages = await postService.getNumberOfPost();
 
   res.render("home", {
@@ -79,6 +79,7 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
 app.use("/login", loginRoute);
 app.use("/signup", signUpRoute);
 app.use("/post", postRoute);
+app.use("/logout", logoutRoute);
 const { getPostByPage } = require("./services/post.service");
 app.listen(port, async () => {
   // check if the website is runnig
