@@ -3,7 +3,7 @@ const commentService = require("../services/comment.service");
 
 async function getPost(req, res) {
   const id = req.params.postId;
-  console.log(id);
+  //console.log(id);
   const post = await postService.getPostById(id);
 
   res.render("detailPost", {
@@ -45,11 +45,11 @@ async function initPost(req, res) {
 }
 
 async function deletePost(req, res) {
-  const postId = req.body.id;
+  const postId = req.body.postId;
 
   // Thực hiện xoá
   const result = await postService.deletePost(postId);
-
+  console.log(result);
   if (result) {
     console.log("Deleted post");
   } else {
