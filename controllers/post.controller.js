@@ -1,6 +1,18 @@
 const postService = require('../services/post.service');
 const commentService = require('../services/comment.service');
 
+async function getPost (req, res) {
+    const id = req.params.postId;
+
+    const post = await postService.getPostById(id);
+
+    res.render('detailPost', {
+        post: post,
+        showTitle: true,
+        layout: false,
+    });
+}
+
 async function initPost (req, res) {
     // Dữ liệu bài đang mới 
     const newPost = {
@@ -80,4 +92,5 @@ module.exports = {
     deletePost,
     updatePost,
     addComment,
+    getPost,
 };

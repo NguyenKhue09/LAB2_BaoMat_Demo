@@ -5,6 +5,8 @@ const controller = require('../controllers/post.controller');
 
 const middleware =  require('../middlewares/post.middleware');
 
+roouter.get('/:postId', controller.getPost);
+
 router.post('/addPost', controller.initPost);
 
 router.post('/deletePost', middleware.ownUserPost, controller.deletePost);

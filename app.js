@@ -39,8 +39,7 @@ var hbs = exphbs.create({
 });
 
 require("dotenv").config(); // to use .env file
-app.engine("handlebars", hbs.engine);
-app.set("view engine", "handlebars");
+app.set('view engine', 'pug');
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
