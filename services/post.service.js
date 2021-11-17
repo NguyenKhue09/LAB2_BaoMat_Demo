@@ -62,13 +62,14 @@ async function getPostByUserId(userId) {
 
 async function getPostById(id) {
 
-    const posts = await Post.find({_id: id}, (err) => {
+    const post = await Post.findOne({_id: id}, (err) => {
         if(!err) console.log("Get post successful!");
         
         else console.log("Get post failed!");
-    }).populate('comments').populate('userPostId');
+    }).clone().populate('comments').populate('userPostId');
 
-    return posts;
+    console.log(post)
+    return post;
 }
 
 async function getPostByPage(page) {
