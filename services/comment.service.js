@@ -3,7 +3,7 @@ const Comment = require("../models/comment.model");
 async function addComment(data) {
   try {
     const newComment = new Comment(data);
-    console.log(data);
+   
     const saveComment = await newComment.save().then(async (comment) => {
       await addCommentToPost(data.post, comment._id);
       if (comment) console.log("Add comment successful!");
