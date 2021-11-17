@@ -49,7 +49,7 @@ async function deletePost(req, res) {
 
   // Thực hiện xoá
   const result = await postService.deletePost(postId);
-  console.log(result);
+  //console.log(result);
   if (result) {
     console.log("Deleted post");
   } else {
