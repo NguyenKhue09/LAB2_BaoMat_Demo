@@ -55,8 +55,12 @@ async function getPostByUserId(userId) {
     else console.log("Get all post of user failed!");
   })
     .clone()
-    .populate("comments")
-    .populate("userPostId");
+    .populate({
+      path: "comments",
+      populate: { path: "userComment", select: "email" },
+    })
+    .populate("userPostId", "email")
+    .lean();
 
   return posts;
 }
@@ -67,8 +71,12 @@ async function getPostById(id) {
     else console.log("Get post failed!");
   })
     .clone()
-    .populate("comments")
-    .populate("userPostId");
+    .populate({
+      path: "comments",
+      populate: { path: "userComment", select: "email" },
+    })
+    .populate("userPostId", "email")
+    .lean();
 
   //console.log(post);
   return post;
