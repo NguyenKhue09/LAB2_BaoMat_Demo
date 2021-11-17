@@ -98,6 +98,24 @@ async function addComment(req, res) {
   res.redirect("/");
 }
 
+async function searchPost(req, res) {
+  const search = req.query.q;
+
+  const result = await postService.searchPosts(search);
+
+  if (result) {
+    console.log("Searching post by name successfully");
+  } else {
+    console.log("Falied in searching post ");
+  }
+
+  res.render("searchPost", {
+    posts: result,
+    showTitle: true,
+    layout: false,
+  });
+}
+
 module.exports = {
   initPost,
   deletePost,
@@ -105,4 +123,5 @@ module.exports = {
   addComment,
   getPost,
   getUserPost,
+  searchPost,
 };
