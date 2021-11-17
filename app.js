@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 1050;
+const port = process.env.PORT || 1050;
 const connectDB = require("./config/db-connect");
 var exphbs = require("express-handlebars");
 
