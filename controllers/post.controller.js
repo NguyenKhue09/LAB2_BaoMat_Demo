@@ -87,17 +87,9 @@ async function addComment(req, res) {
 }
 
 module.exports = {
-<<<<<<< HEAD
     initPost,
     deletePost,
     updatePost,
     addComment,
     getPost,
 };
-=======
-  initPost,
-  deletePost,
-  updatePost,
-  addComment,
-};
->>>>>>> c5673e0e728e97338ed195f157feae99cac921e9
