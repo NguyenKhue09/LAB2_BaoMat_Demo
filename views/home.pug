@@ -1,0 +1,51 @@
+extends ./header.pug
+block content 
+    .container
+         section(style='background-color: #eee;')
+            .container.my-5.py-5
+                .row.d-flex.justify-content-center.mb-5
+                    .col-md-12.col-lg-10.col-xl-8
+                        .card
+                            .card-body
+                                .d-flex.flex-start.w-100
+                                    form.form-outline.w-100(method='post', action='/post/addPost', style='margin-bottom: 0 !important;')
+                                        div
+                                            label.form-label(for='inputTitle')
+                                                | Title
+                                            input#inputTitle.form-control(type='text', name='title')
+                                        .mb-1
+                                            label.form-label(for='exampleInputPassword1') Content
+                                            textarea#textAreaExample.form-control(rows='4', style='background: #fff;', name='description')
+                                        .float-end.mt-2.pt-1
+                                            button.btn.btn-primary.btn-sm(type='submit')
+                                                | Post article
+                .row.d-flex.justify-content-center
+                    .col-md-12.col-lg-10.col-xl-8
+                        .card.mb-3
+                            .card-body
+                                .d-flex.flex-start.align-items-center
+                                    img.rounded-circle.shadow-1-strong.me-3(src='https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg', alt='avatar', width='60', height='60')
+                                    div
+                                        h6.fw-bold.text-primary.mb-1
+                                            | Cute pig
+                                h5.mt-2(style='font-weight: bold;') Hello day
+                                p dfhdfjdhfudfheufgheuifweufgd8f8edf8e
+                                .d-flex.justify-content-start.align-items-center
+                                    i.fas.fa-comment
+                                    h6.btn-comment(style='margin-bottom: 0 !important;')
+                                        | Comment
+                            .card-footer.py-3.border-0.view-comment(style='background-color: #f8f9fa;')
+                                .d-flex.flex-start.w-100
+                                    img.rounded-circle.shadow-1-strong.me-3(src='https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg', alt='avatar', width='40', height='40')
+                                    .form-outline.w-100
+                                    h6.fw-bold.text-primary.mb-1
+                                        | Cute pig
+                                    p.mt-1.pb-2
+                                        | tet comment
+                                .d-flex.flex-start.w-100
+                                    img.rounded-circle.shadow-1-strong.me-3(src='https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg', alt='avatar', width='40', height='40')
+                                    form.form-outline.w-100(method='post', action='/post/addComment')
+                                        input(type='hidden', name='postId', value='idpost')
+                                        textarea#textAreaExample.form-control(rows='4', name='text', style='background: #fff;')
+                                        .float-end.mt-2.pt-1
+                                            button.btn.btn-primary.btn-sm(type='submit') Post comment

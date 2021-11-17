@@ -1,18 +1,18 @@
-const express = require('express');
-const router = express.Router(); 
+const express = require("express");
+const router = express.Router();
 
-const controller = require('../controllers/post.controller');
+const controller = require("../controllers/post.controller");
 
-const middleware =  require('../middlewares/post.middleware');
+const middleware = require("../middlewares/post.middleware");
 
-roouter.get('/:postId', controller.getPost);
+router.get("/:postId", controller.getPost);
 
-router.post('/addPost', controller.initPost);
+router.post("/addPost", controller.initPost);
 
-router.post('/deletePost', middleware.ownUserPost, controller.deletePost);
+router.post("/deletePost", middleware.ownUserPost, controller.deletePost);
 
-router.post('/updatePost', middleware.ownUserPost, controller.updatePost);
+router.post("/updatePost", middleware.ownUserPost, controller.updatePost);
 
-router.post('/addComment', controller.addComment);
+router.post("/addComment", controller.addComment);
 
 module.exports = router;
