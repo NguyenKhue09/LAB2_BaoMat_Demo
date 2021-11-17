@@ -191,6 +191,30 @@ async function addCommentToPost(postId, commentId) {
   }
 }
 
+async function searchPosts(searchString) {
+  try {
+    const posts = await Post.find({title: {$search: searchString}})
+      .populate({
+        path: "comments",
+        populate: { path: "userComment", select: "email" },
+      })
+      .populate("userPostId", "email")
+      .lean();
+
+    if (!posts) {
+      throw "Post not found!";
+    } else {
+      console.log("Get all post success");
+      //console.log(posts);
+    }
+
+    return posts;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+}
+
 module.exports = {
   addPost,
   getPostByUserId,
@@ -201,6 +225,7 @@ module.exports = {
   getNumberOfPost,
   getPostById,
   addCommentToPost,
+  searchPosts
 };
 
 const { deleteCommentByPost } = require("../services/comment.service");
