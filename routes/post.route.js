@@ -5,7 +5,7 @@ const controller = require("../controllers/post.controller");
 
 const middleware = require("../middlewares/post.middleware");
 
-router.get("/:postId", controller.getPost);
+router.get("/postDetail/:postId", controller.getPost);
 
 router.get("/user/:id", controller.getUserPost);
 

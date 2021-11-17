@@ -55,6 +55,6 @@ block content
         const id = document.querySelectorAll(".getIdPost");
         post.forEach(function (item, index) {
         item.addEventListener("click", function handle() {
-            location.href=`/post/${id[index].value}`;
+            location.href=`/post/postDetail/${id[index].value}`;
         });
         });
