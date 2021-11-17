@@ -110,7 +110,6 @@ async function getNumberOfPost() {
 }
 
 async function deletePost(postId) {
-    console.log(`post id ${postId}`);
   const sess = await Post.startSession();
   sess.startTransaction();
 

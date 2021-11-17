@@ -22,7 +22,8 @@ async function deleteCommentByPost(post) {
   try {
     const deleteMany = await Comment.deleteMany({ post });
 
-    if (deleteMany.ok === 1 && deleteMany.n === deleteMany.deletedCount) {
+    console.log(deleteMany);
+    if (deleteMany) {
       console.log("Deleted all comment belong to post successful");
     } else {
       throw "Deleted all comment fail!";
