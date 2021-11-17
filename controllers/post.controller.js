@@ -99,21 +99,24 @@ async function addComment(req, res) {
 }
 
 async function searchPost(req, res) {
+  console.log("Huy day");
   const search = req.query.q;
-
-  const result = await postService.searchPosts(search);
-
-  if (result) {
-    console.log("Searching post by name successfully");
-  } else {
-    console.log("Falied in searching post ");
+  console.log("q: ", search);
+  try {
+    const result = await postService.searchPosts(search);
+    if (result) {
+      console.log("Searching post by name successfully");
+    } else {
+      console.log("Falied in searching post ");
+    }
+    res.render("searchPost", {
+      posts: result,
+      showTitle: true,
+      layout: false,
+    });
+  } catch (err) {
+    console.log(err);
   }
-
-  res.render("searchPost", {
-    posts: result,
-    showTitle: true,
-    layout: false,
-  });
 }
 
 module.exports = {

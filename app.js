@@ -85,7 +85,7 @@ app.listen(port, async () => {
   // check if the website is runnig
   // const post = await getPostByPage(1);
   // console.log(post);
-  const search = postService.searchPosts("abc");
-  console.log(search);
+  // const search = await postService.searchPosts("hy vo");
+  // console.log("search:", search);
   console.log(`The app is listening at port ${port}`);
 });
