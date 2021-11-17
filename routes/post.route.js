@@ -7,7 +7,7 @@ const middleware = require("../middlewares/post.middleware");
 
 router.get("/:postId", controller.getPost);
 
-router.get('/user/:id', controller.getUserPost);
+router.get("/user/:id", controller.getUserPost);
 
 router.post("/addPost", controller.initPost);
 
@@ -16,5 +16,7 @@ router.post("/deletePost", middleware.ownUserPost, controller.deletePost);
 router.post("/updatePost", middleware.ownUserPost, controller.updatePost);
 
 router.post("/addComment", controller.addComment);
+
+router.get("/search", controller.searchPost);
 
 module.exports = router;

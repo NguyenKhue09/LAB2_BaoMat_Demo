@@ -55,8 +55,12 @@ async function getPostByUserId(userId) {
     else console.log("Get all post of user failed!");
   })
     .clone()
-    .populate("comments")
-    .populate("userPostId");
+    .populate({
+      path: "comments",
+      populate: { path: "userComment", select: "email" },
+    })
+    .populate("userPostId", "email")
+    .lean();
 
   return posts;
 }
@@ -67,8 +71,12 @@ async function getPostById(id) {
     else console.log("Get post failed!");
   })
     .clone()
-    .populate("comments")
-    .populate("userPostId");
+    .populate({
+      path: "comments",
+      populate: { path: "userComment", select: "email" },
+    })
+    .populate("userPostId", "email")
+    .lean();
 
   //console.log(post);
   return post;
@@ -183,6 +191,30 @@ async function addCommentToPost(postId, commentId) {
   }
 }
 
+async function searchPosts(searchString) {
+  try {
+    const posts = await Post.find({ $text: { $search: searchString } })
+      .populate({
+        path: "comments",
+        populate: { path: "userComment", select: "email" },
+      })
+      .populate("userPostId", "email")
+      .lean();
+
+    if (!posts) {
+      throw "Post not found!";
+    } else {
+      console.log("Get all post success");
+      // console.log(posts);
+    }
+
+    return posts;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+}
+
 module.exports = {
   addPost,
   getPostByUserId,
@@ -193,6 +225,7 @@ module.exports = {
   getNumberOfPost,
   getPostById,
   addCommentToPost,
+  searchPosts,
 };
 
 const { deleteCommentByPost } = require("../services/comment.service");

@@ -3,7 +3,7 @@ const Comment = require("../models/comment.model");
 async function addComment(data) {
   try {
     const newComment = new Comment(data);
-
+   
     const saveComment = await newComment.save().then(async (comment) => {
       await addCommentToPost(data.post, comment._id);
       if (comment) console.log("Add comment successful!");
@@ -22,7 +22,8 @@ async function deleteCommentByPost(post) {
   try {
     const deleteMany = await Comment.deleteMany({ post });
 
-    if (deleteMany.ok === 1 && deleteMany.n === deleteMany.deletedCount) {
+    console.log(deleteMany);
+    if (deleteMany) {
       console.log("Deleted all comment belong to post successful");
     } else {
       throw "Deleted all comment fail!";
