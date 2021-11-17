@@ -13,6 +13,18 @@ async function getPost (req, res) {
     });
 }
 
+async function getUserPost (req, res) {
+  const id = req.params.id;
+
+  const userPosts = await postService.getPostByUserId(id);
+
+  res.render('userPost', {
+    posts: userPosts,
+    showTitle: true,
+    layout: false,
+});
+}
+
 async function initPost (req, res) {
     // Dữ liệu bài đang mới 
     const newPost = {
@@ -92,4 +104,5 @@ module.exports = {
     updatePost,
     addComment,
     getPost,
+    getUserPost,
 };
