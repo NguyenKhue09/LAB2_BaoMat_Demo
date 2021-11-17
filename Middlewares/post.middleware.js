@@ -5,6 +5,7 @@ async function ownUserPost (req, res, next) {
 
     const postId = req.body.id;
     const deletingPost = await postService.getPostById(postId);
+    console.log(deletingPost);
 
     if (deletingPost.userPostId != currentUserId) {
         res.redirect('/');
