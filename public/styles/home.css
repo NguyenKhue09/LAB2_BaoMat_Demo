@@ -4,6 +4,8 @@
   display: block;
 }
 
-.card-post:hover {
-  background-color: gray;
+.card-post:hover,
+.info-user:hover {
+  cursor: pointer;
+  background-color: white;
 }
