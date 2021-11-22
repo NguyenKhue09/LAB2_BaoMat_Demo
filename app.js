@@ -47,6 +47,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("views", "./views"); // view
 app.use(cookieParser(process.env.SECRET_COOKIES));
 app.use(csurf({ cookie: true }));
+
 app.use(
   session({
     secret: process.env.SECRET_SESSION,
