@@ -1,0 +1,2 @@
+The app is listening at port \\.\pipe\079d454e-3123-4c5c-b959-17bfce2bd48d
+Ket noi database thanh cong!
