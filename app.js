@@ -10,6 +10,7 @@ app.use(express.static("public"));
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
+var csurf = require('csurf');
 
 // Services
 const postService = require("./services/post.service");
@@ -45,6 +46,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("views", "./views"); // view
 app.use(cookieParser(process.env.SECRET_COOKIES));
+app.use(csurf({ cookie: true }));
 app.use(
   session({
     secret: process.env.SECRET_SESSION,
@@ -72,6 +74,7 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
     currentPage: page,
     showTitle: true,
     layout: false,
+    csrf: req.csrfToken(),
   });
 });
 

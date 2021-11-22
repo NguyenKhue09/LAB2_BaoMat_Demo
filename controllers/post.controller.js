@@ -10,6 +10,7 @@ async function getPost(req, res) {
     post: post,
     showTitle: true,
     layout: false,
+    csrf: req.csrfToken(),
   });
 }
 
@@ -22,6 +23,7 @@ async function getUserPost(req, res) {
     posts: userPosts,
     showTitle: true,
     layout: false,
+    csrf: req.csrfToken(),
   });
 }
 
@@ -113,6 +115,7 @@ async function searchPost(req, res) {
       posts: result,
       showTitle: true,
       layout: false,
+      csrf: req.csrfToken(),
     });
   } catch (err) {
     console.log(err);
