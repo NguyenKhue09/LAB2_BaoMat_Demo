@@ -70,7 +70,7 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
 
   const userId = req.signedCookies.userId;
   const notify = await notifyService.GetNotifyNotRead(userId);
-  console.log(notify);
+  // console.log(notify);
 
   res.render("home", {
     user: res.locals.user,

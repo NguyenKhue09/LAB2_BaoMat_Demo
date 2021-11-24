@@ -1,0 +1,22 @@
+The app is listening at port \\.\pipe\e8363080-411b-4668-892b-23c08b407524
+Ket noi database thanh cong!
+Find  user successful!
+Find  admin successful!
+[
+  {
+    _id: new ObjectId("619dadba6e0ec71106256175"),
+    userId: new ObjectId("618b2e5da5dda9ce781eca4e"),
+    postId: new ObjectId("618b87a82c5ddb314fe620c3"),
+    isRead: false,
+    content: 'test105@gmail.com has comment on your post 123',
+    __v: 0
+  },
+  {
+    _id: new ObjectId("619dae816e0ec711062561b5"),
+    userId: new ObjectId("618b2e5da5dda9ce781eca4e"),
+    postId: new ObjectId("618b87a82c5ddb314fe620c3"),
+    isRead: false,
+    content: 'test105@gmail.com has comment on your post 123',
+    __v: 0
+  }
+]
