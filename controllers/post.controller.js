@@ -1,6 +1,7 @@
 const postService = require("../services/post.service");
 const commentService = require("../services/comment.service");
 const notifyService = require("../services/notify.service");
+const userService = require("../services/user.service");
 
 async function getPost(req, res) {
   const id = req.params.postId;
@@ -96,13 +97,14 @@ async function addComment(req, res) {
     console.log("Added comment to post");
 
     const userId = req.signedCookies.userId;
-    const user = res.locals.user;
+    const user = await userService.findOneUser({_id: userId});
     const content = user.email + " has comment on your post " + req.body.title;
 
     const notifyData = {
       userId: userId,
       postId: req.body.postId,
-      content: content
+      content: content,
+      isRead: false,
     };
 
     const addNotify = await notifyService.AddNewNotify(notifyData);
@@ -117,7 +119,6 @@ async function addComment(req, res) {
 }
 
 async function searchPost(req, res) {
-  console.log("Huy day");
   const search = req.query.q;
   console.log("q: ", search);
   try {
