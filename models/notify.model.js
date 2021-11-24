@@ -11,7 +11,7 @@ const notifySchema = new mongoose.Schema({
     postId: {
         type: mongoose.Schema.Types.ObjectId,
         required: [true, "Notify must belong to a post"],
-        ref: posts
+        ref: users
     },
     isRead: {
         type: Boolean,
@@ -21,7 +21,7 @@ const notifySchema = new mongoose.Schema({
         type: String,
         required: [true, "Notify must have content"]
     }
-})
+}, { timestamps: true })
 
 const Notifies = mongoose.model("notify", notifySchema);
 
