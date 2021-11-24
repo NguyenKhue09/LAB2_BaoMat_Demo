@@ -14,6 +14,11 @@ module.exports.requireUser =  async (req, res, next) => {
         return;
     }
 
+
+    res.cookie("userId", user._id, {
+        signed: true,
+      });
+
     res.locals.user = user;
     
     next();

@@ -35,6 +35,7 @@ block content
                                                                     label Title
                                                                         span.text-danger * 
                                                                     input.form-control.name-post(type="text" name="title"  required)
+                                                                    input(type="hidden" name="_csrf" value=csrf)
                                                                     label Content
                                                                         span.text-danger * 
                                                                     input.form-control.code-post(type="text" name="description"  required)
@@ -54,6 +55,7 @@ block content
                                                     .modal-footer.d-flex.justify-content-center
                                                         //- input(type="hidden" name="_csrf" value=csrf)
                                                         button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+                                                        input(type="hidden" name="_csrf" value=csrf)
                                                         button.btn.btn-danger.confirm-delete-post(type='submit' name="postId") Delete
 
     script.

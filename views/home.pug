@@ -13,6 +13,7 @@ block content
                                             label.form-label(for='inputTitle')
                                                 | Title
                                             input#inputTitle.form-control(type='text', name='title')
+                                            input(type="hidden" name="_csrf" value=csrf)
                                         .mb-1
                                             label.form-label(for='exampleInputPassword1') Content
                                             textarea#textAreaExample.form-control(rows='4', style='background: #fff;', name='description')
@@ -55,6 +56,6 @@ block content
         const id = document.querySelectorAll(".getIdPost");
         post.forEach(function (item, index) {
         item.addEventListener("click", function handle() {
-            location.href=`/post/${id[index].value}`;
+            location.href=`/post/postDetail/${id[index].value}`;
         });
         });

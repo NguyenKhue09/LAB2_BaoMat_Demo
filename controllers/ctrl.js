@@ -10,6 +10,7 @@ module.exports.loginUser = async (req, res) => {
 
   res.render("authentication", {
     layout: false,
+    csrf: req.csrfToken(),
   });
 };
 
@@ -26,6 +27,7 @@ module.exports.postLoginUser = async (req, res) => {
       errors: errors,
       values: req.body,
       layout: false,
+      csrf: req.csrfToken(),
     });
     return;
   }
@@ -42,6 +44,7 @@ module.exports.postLoginUser = async (req, res) => {
       errors: errors,
       values: req.body,
       layout: false,
+      csrf: req.csrfToken(),
     });
     return;
   }
@@ -64,6 +67,7 @@ module.exports.signUpUser = async (req, res) => {
   res.render("registration", {
     showTitle: true,
     layout: false,
+    csrf: req.csrfToken(),
   });
 };
 
@@ -85,6 +89,7 @@ module.exports.postSignUpUser = async (req, res) => {
     res.render("authentication", {
       error: "Error! Please try again",
       layout: false,
+      csrf: req.csrfToken(),
     });
     return;
   }
@@ -95,6 +100,7 @@ module.exports.postSignUpUser = async (req, res) => {
     res.render("registration", {
       error: "Error! Please try again",
       layout: false,
+      csrf: req.csrfToken(),
     });
   } else {
     req.session.user = user;

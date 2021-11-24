@@ -10,6 +10,7 @@ async function getPost(req, res) {
     post: post,
     showTitle: true,
     layout: false,
+    csrf: req.csrfToken(),
   });
 }
 
@@ -22,6 +23,7 @@ async function getUserPost(req, res) {
     posts: userPosts,
     showTitle: true,
     layout: false,
+    csrf: req.csrfToken(),
   });
 }
 
@@ -49,7 +51,7 @@ async function deletePost(req, res) {
 
   // Thực hiện xoá
   const result = await postService.deletePost(postId);
-  console.log(result);
+  //console.log(result);
   if (result) {
     console.log("Deleted post");
   } else {
@@ -99,21 +101,25 @@ async function addComment(req, res) {
 }
 
 async function searchPost(req, res) {
+  console.log("Huy day");
   const search = req.query.q;
-
-  const result = await postService.searchPosts(search);
-
-  if (result) {
-    console.log("Searching post by name successfully");
-  } else {
-    console.log("Falied in searching post ");
+  console.log("q: ", search);
+  try {
+    const result = await postService.searchPosts(search);
+    if (result) {
+      console.log("Searching post by name successfully");
+    } else {
+      console.log("Falied in searching post ");
+    }
+    res.render("searchPost", {
+      posts: result,
+      showTitle: true,
+      layout: false,
+      csrf: req.csrfToken(),
+    });
+  } catch (err) {
+    console.log(err);
   }
-
-  res.render("searchPost", {
-    posts: result,
-    showTitle: true,
-    layout: false,
-  });
 }
 
 module.exports = {

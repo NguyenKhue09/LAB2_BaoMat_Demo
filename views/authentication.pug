@@ -12,6 +12,7 @@ head
         .input-field
           i.fas.fa-envelope
           input(type='email', placeholder='Email', name='email')
+          input(type="hidden" name="_csrf" value=csrf)
         .input-field
           i.fas.fa-lock
           input(type='password', placeholder='Password', name='password')

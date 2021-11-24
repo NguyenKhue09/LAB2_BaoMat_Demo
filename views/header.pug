@@ -19,12 +19,12 @@ head
 body 
     nav.navbar.navbar-expand-lg.navbar-light(style='background-color:#f050bb ')
         .container-lg
-            a.navbar-brand(href='/') Forum XSS
+            a.navbar-brand(href='/') Forum IE105 LAB 2
             button.navbar-toggler.navbar-toggler-right.font-weight-bold.bg-outline.text-white.rounded(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                 i.fas.fa-bars
             #navbarResponsive.collapse.navbar-collapse
-                form.d-flex.m-auto.mt-2(method="get" action="/search")
-                    input.form-control.me-2(type='search', placeholder='Search', aria-label='Search' name="q")
+                form.d-flex.m-auto.mt-2(method="get", action="/post/search")
+                    input.form-control.me-2(type='text', placeholder='Search', name="q")
                     button.btn.btn-outline-success(type='submit') Search
                 if user 
                     .navbar-nav.me-auto.mb-lg-0.info-user

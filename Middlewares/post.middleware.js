@@ -3,9 +3,9 @@ const postService = require('../services/post.service');
 async function ownUserPost (req, res, next) {
     const currentUserId = req.signedCookies.userId;
 
-    const postId = req.body.postId;
+    const postId = req.body.id;
     const deletingPost = await postService.getPostById(postId);
-    console.log(deletingPost);
+
     if (deletingPost.userPostId._id != currentUserId) {
         // console.log(deletingPost.userPostId._id == currentUserId);
         //console.log(currentUserId)
