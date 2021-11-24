@@ -29,6 +29,11 @@ body
                 if user 
                     .navbar-nav.me-auto.mb-lg-0.info-user
                         h6(onclick=`location.href="/post/user/${user._id}"`) #{user.email}
+                        if notify
+                            div.dropdown-content
+                                for item in notify
+                                    a(href="#") #{item.content}
+                                
                     button.btn.btn-primary(onclick="location.href='/logout/dz9O7rfG629JL82P8ury'") Logout
                 else 
                     ul.navbar-nav.ms-auto.mb-2.mb-lg-0
