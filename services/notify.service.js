@@ -12,9 +12,9 @@ async function GetNotifyNotRead(userId) {
 }
 
 /** */
-async function AddNewNotify(newNotify) {
+async function AddNewNotify(data) {
   try {
-    const newNotify = new Notifies(newNotify);
+    const newNotify = new Notifies(data);
 
     const saveNotify = await newNotify.save();
 
