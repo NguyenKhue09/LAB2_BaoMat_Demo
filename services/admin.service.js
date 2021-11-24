@@ -38,6 +38,7 @@ async function findOneAdmin(info) {
     } catch (error) {
         
         console.log(error.message)
+        return null;
     }
 }
 

@@ -1,5 +1,6 @@
 const postService = require("../services/post.service");
 const commentService = require("../services/comment.service");
+const notifyService = require("../services/notify.service");
 
 async function getPost(req, res) {
   const id = req.params.postId;
@@ -93,6 +94,21 @@ async function addComment(req, res) {
 
   if (result) {
     console.log("Added comment to post");
+
+    const userId = req.signedCookies.userId;
+    const user = res.locals.user;
+    const content = user.email + " has comment on your post " + req.body.title;
+
+    const notifyData = {
+      userId: userId,
+      postId: req.body.postId,
+      content: content
+    };
+
+    const addNotify = await notifyService.AddNewNotify(notifyData);
+
+    if (addNotify) console.log("Add notification successfully");
+    else console.log("Add notification failed");
   } else {
     console.log("Falied in adding comment to post");
   }
