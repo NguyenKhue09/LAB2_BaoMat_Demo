@@ -14,6 +14,7 @@ var csurf = require('csurf');
 
 // Services
 const postService = require("./services/post.service");
+const notifyService = require("./services/notify.service");
 
 // Middlewares
 const authMiddleware = require("./Middlewares/authentication.middleware");
@@ -68,11 +69,15 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
   // console.log(allPosts);
   const allPages = await postService.getNumberOfPost();
 
+  const userId = req.signedCookies.userId;
+  const notify = await notifyService.GetNotifyNotRead(userId);
+
   res.render("home", {
     user: res.locals.user,
     posts: allPosts,
     allPages: allPages,
     currentPage: page,
+    notify: notify,
     showTitle: true,
     layout: false,
     csrf: req.csrfToken(),
