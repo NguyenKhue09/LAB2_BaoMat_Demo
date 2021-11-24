@@ -96,8 +96,9 @@ async function addComment(req, res) {
   if (result) {
     console.log("Added comment to post");
 
-    const userId = req.signedCookies.userId;
-    const user = await userService.findOneUser({_id: userId});
+    const post = await postService.getPostById(req.body.postId);
+    const userId = post.userPostId;
+    const user = await userService.findOneUser({_id: req.signedCookies.userId});
     const content = user.email + " commented on your post " + req.body.title;
 
     const notifyData = {
