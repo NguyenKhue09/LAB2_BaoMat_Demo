@@ -204,7 +204,7 @@ async function searchPosts(searchString) {
     if (!posts) {
       throw "Post not found!";
     } else {
-      console.log("Get all post success");
+      console.log("Get search post success");
       //console.log(posts);
     }
 
