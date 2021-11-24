@@ -86,7 +86,7 @@ module.exports.postSignUpUser = async (req, res) => {
 
   if (!req.body.email || !req.body.password) {
     errors.push("Please fill in all informations");
-    res.render("authentication", {
+    res.render("registration", {
       error: "Error! Please try again",
       layout: false,
       csrf: req.csrfToken(),
