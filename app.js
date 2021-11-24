@@ -10,7 +10,7 @@ app.use(express.static("public"));
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
-var csurf = require('csurf');
+var csurf = require("csurf");
 
 // Services
 const postService = require("./services/post.service");
@@ -66,11 +66,11 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
   }
 
   const allPosts = await postService.getPostByPage(page);
-  // console.log(allPosts);
   const allPages = await postService.getNumberOfPost();
 
   const userId = req.signedCookies.userId;
   const notify = await notifyService.GetNotifyNotRead(userId);
+  console.log(notify);
 
   res.render("home", {
     user: res.locals.user,
