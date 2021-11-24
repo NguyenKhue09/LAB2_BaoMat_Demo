@@ -29,7 +29,7 @@ body
                 if user 
                     .navbar-nav.me-auto.mb-lg-0.info-user
                         h6(onclick=`location.href="/post/user/${user._id}"`) #{user.email}
-                        if notify
+                        if notify && notify.length > 0
                             div.dropdown-content
                                 for item in notify
                                     a(href="#") #{item.content}

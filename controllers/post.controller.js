@@ -98,7 +98,9 @@ async function addComment(req, res) {
 
     const post = await postService.getPostById(req.body.postId);
     const userId = post.userPostId;
-    const user = await userService.findOneUser({_id: req.signedCookies.userId});
+    const user = await userService.findOneUser({
+      _id: req.signedCookies.userId,
+    });
     const content = user.email + " commented on your post " + req.body.title;
 
     const notifyData = {
@@ -116,7 +118,7 @@ async function addComment(req, res) {
     console.log("Falied in adding comment to post");
   }
 
-  res.redirect("/");
+  res.redirect(`/post/postDetail/${req.body.postId}`);
 }
 
 async function searchPost(req, res) {
