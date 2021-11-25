@@ -11,6 +11,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 var csurf = require("csurf");
+const mongoSanitize = require('express-mongo-sanitize');
 
 // Services
 const postService = require("./services/post.service");
@@ -48,6 +49,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("views", "./views"); // view
 app.use(cookieParser(process.env.SECRET_COOKIES));
 app.use(csurf({ cookie: true }));
+app.use(
+  mongoSanitize({
+    replaceWith: '_',
+  }),
+);
 
 app.use(
   session({

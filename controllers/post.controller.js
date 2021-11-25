@@ -65,7 +65,7 @@ async function deletePost(req, res) {
 
 async function updatePost(req, res) {
   const postId = req.body.id;
-
+  // console.log(typeof postId);
   const newData = {
     title: req.body.title,
     description: req.body.description,

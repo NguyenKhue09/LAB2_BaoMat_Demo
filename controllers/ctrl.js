@@ -33,6 +33,7 @@ module.exports.postLoginUser = async (req, res) => {
   }
 
   const user = await service.findOneUser({ email: email });
+  console.log(user);
   if (!user) {
     errors.push("User doesn't exist");
   } else if (user.password != password) {
