@@ -18,7 +18,7 @@ module.exports.loginUser = async (req, res) => {
 module.exports.postLoginUser = async (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
-
+  
   let errors = [];
 
   if (!email || !password) {
