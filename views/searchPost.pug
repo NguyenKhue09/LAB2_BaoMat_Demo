@@ -7,7 +7,7 @@ block content
                     .col-md-12.col-lg-10.col-xl-8
                         if posts && posts.length > 0
                             for post in posts 
-                                .card.mb-3
+                                .card.mb-3.card-post
                                     .card-body
                                         .d-flex.justify-content-between.align-items-center
                                             div.d-flex.flex-start.align-items-center
@@ -15,11 +15,14 @@ block content
                                                 div
                                                     h6.fw-bold.text-primary.mb-1 #{post.userPostId.email}
                                                     input.getIdPost(type='hidden', name='idpost', value=post._id)
-                                            div 
-                                                button.btn-light.btn.btn-update-post(type='button',title="update" data-toggle='modal',
-                                                 data-target='#updatePostModal', data-id=post._id, data-name=post.title, data-code= post.description)
-                                                    i.fas.fa-edit
-                                                button.btn-light.btn.ms-1.btn-delete-post(type='button', data-toggle='modal', data-target='#delete-post', data-id=post._id)    
-                                                    i.fas.fa-trash-alt
+                                            
                                         h5.mt-2(style='font-weight: bold;') #{post.title}
                                         p #{post.description}
+    script(type="text/javascript").
+        const post = document.querySelectorAll(".card-post");
+        const id = document.querySelectorAll(".getIdPost");
+        post.forEach(function (item, index) {
+        item.addEventListener("click", function handle() {
+            location.href=`/post/postDetail/${id[index].value}`;
+        });
+        });
