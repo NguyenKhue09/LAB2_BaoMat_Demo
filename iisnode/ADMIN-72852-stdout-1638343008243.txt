@@ -1,0 +1,130 @@
+The app is listening at port \\.\pipe\7541c728-9aaa-412c-9c1f-a3362fa895bf
+Ket noi database thanh cong!
+Find  user successful!
+{
+  _id: new ObjectId("618b2e5da5dda9ce781eca4e"),
+  email: 'test105@gmail.com',
+  password: '123',
+  createdAt: 2021-11-10T02:28:45.517Z,
+  updatedAt: 2021-11-10T02:28:45.517Z,
+  __v: 0
+}
+Find  user successful!
+Find  admin successful!
+Get all post of user successful!
+Find  user successful!
+Find  admin successful!
+Add new post successful!
+Created post
+Find  user successful!
+Find  admin successful!
+Get all post of user successful!
+Find  user successful!
+Find  admin successful!
+Get post successful!
+Find  user successful!
+Find  admin successful!
+Get all post of user successful!
+Get all post of user successful!
+Get all post of user successful!
+Get all post of user successful!
+Find  user successful!
+Find  admin successful!
+Get all post of user successful!
+Get all post of user successful!
+Get all post of user successful!
+Updated post
+Get all post of user successful!
+Get all post of user successful!
+Updated post
+Get all post of user successful!
+Get all post of user successful!
+Get all post of user successful!
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Updated post
+Find  user successful!
+Find  admin successful!
+Get post successful!
+Find  user successful!
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+Find  user successful!
+Find  admin successful!
+Get all post of user successful!
+Find  user successful!
+Find  admin successful!
+Updated post
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Get post successful!
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Get all post of user successful!
+Get all post of user successful!
+Get all post of user successful!
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Get post successful!
+Add comment to post successful
+Add comment successful!
+Added comment to post
+Get post successful!
+Find  user successful!
+Add new notify successful!
+Add notification successfully
+Get post successful!
+Find  user successful!
+Find  admin successful!
+Post validation failed: title: Please add title your post!, description: Please add description your post!
+Falied in creating post
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+{
+  _id: new ObjectId("618b2e5da5dda9ce781eca4e"),
+  email: 'test105@gmail.com',
+  password: '123',
+  createdAt: 2021-11-10T02:28:45.517Z,
+  updatedAt: 2021-11-10T02:28:45.517Z,
+  __v: 0
+}
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Add new post successful!
+Created post
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Add new post successful!
+Created post
+Find  user successful!
+Find  admin successful!
+Find  user successful!
+Find  admin successful!
+Add new post successful!
+Created post
+Find  user successful!
+Find  admin successful!

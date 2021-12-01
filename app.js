@@ -49,11 +49,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("views", "./views"); // view
 app.use(cookieParser(process.env.SECRET_COOKIES));
 app.use(csurf({ cookie: true }));
-// app.use(
-//   mongoSanitize({
-//     replaceWith: '_',
-//   }),
-// );
+app.use(
+  mongoSanitize({
+    replaceWith: "_",
+  })
+);
 
 app.use(
   session({
@@ -65,13 +65,13 @@ app.use(
 );
 
 app.get("/", authMiddleware.requireUser, async (req, res) => {
-  let page = req.query.page;
+  // let page = req.query.page;
 
-  if (page <= 0 || !page) {
-    page = 1;
-  }
+  // if (page <= 0 || !page) {
+  //   page = 1;
+  // }
 
-  const allPosts = await postService.getPostByPage(page);
+  const allPosts = await postService.getAllPost();
   const allPages = await postService.getNumberOfPost();
 
   const userId = req.signedCookies.userId;
@@ -82,7 +82,7 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
     user: res.locals.user,
     posts: allPosts,
     allPages: allPages,
-    currentPage: page,
+    // currentPage: page,
     notify: notify,
     showTitle: true,
     layout: false,
