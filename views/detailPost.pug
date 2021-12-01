@@ -30,7 +30,8 @@ block content
                                         img.rounded-circle.shadow-1-strong.me-3(src='https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg', alt='avatar', width='40', height='40')
                                         form.form-outline.w-100(method='post', action='/post/addComment')
                                             input(type='hidden', name='postId', value=post._id)
+                                            input(type='hidden', name='title', value=post.title)
                                             input(type="hidden" name="_csrf" value=csrf)
-                                            textarea#textAreaExample.form-control(rows='4', name='text', style='background: #fff;')
+                                            textarea#textAreaExample.form-control(rows='4', name='text',required, style='background: #fff;' )
                                             .float-end.mt-2.pt-1
                                                 button.btn.btn-primary.btn-sm(type='submit') Post comment

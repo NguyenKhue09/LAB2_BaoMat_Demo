@@ -13,7 +13,7 @@ router.post("/addPost", controller.initPost);
 
 router.post("/deletePost", middleware.ownUserPost, controller.deletePost);
 
-router.post("/updatePost", middleware.ownUserPost, controller.updatePost);
+router.post("/updatePost", controller.updatePost);
 
 router.post("/addComment", controller.addComment);
 

@@ -1,5 +1,7 @@
 const postService = require("../services/post.service");
 const commentService = require("../services/comment.service");
+const notifyService = require("../services/notify.service");
+const userService = require("../services/user.service");
 
 async function getPost(req, res) {
   const id = req.params.postId;
@@ -63,7 +65,7 @@ async function deletePost(req, res) {
 
 async function updatePost(req, res) {
   const postId = req.body.id;
-
+  // console.log(typeof postId);
   const newData = {
     title: req.body.title,
     description: req.body.description,
@@ -93,15 +95,33 @@ async function addComment(req, res) {
 
   if (result) {
     console.log("Added comment to post");
+
+    const post = await postService.getPostById(req.body.postId);
+    const userId = post.userPostId;
+    const user = await userService.findOneUser({
+      _id: req.signedCookies.userId,
+    });
+    const content = user.email + " commented on your post " + req.body.title;
+
+    const notifyData = {
+      userId: userId,
+      postId: req.body.postId,
+      content: content,
+      isRead: false,
+    };
+
+    const addNotify = await notifyService.AddNewNotify(notifyData);
+
+    if (addNotify) console.log("Add notification successfully");
+    else console.log("Add notification failed");
   } else {
     console.log("Falied in adding comment to post");
   }
 
-  res.redirect("/");
+  res.redirect(`/post/postDetail/${req.body.postId}`);
 }
 
 async function searchPost(req, res) {
-  console.log("Huy day");
   const search = req.query.q;
   console.log("q: ", search);
   try {

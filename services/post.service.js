@@ -147,6 +147,7 @@ async function deletePost(postId) {
   }
 }
 
+// XSS Demo
 async function updatePost(postId, newData) {
   try {
     let data = {};
@@ -158,7 +159,7 @@ async function updatePost(postId, newData) {
       data = { ...data, description: newData.description };
     }
 
-    const update = await Post.findOneAndUpdate(
+    const update = await Post.updateMany(
       {
         _id: postId,
       },

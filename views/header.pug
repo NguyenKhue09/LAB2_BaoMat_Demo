@@ -24,11 +24,16 @@ body
                 i.fas.fa-bars
             #navbarResponsive.collapse.navbar-collapse
                 form.d-flex.m-auto.mt-2(method="get", action="/post/search")
-                    input.form-control.me-2(type='text', placeholder='Search', name="q")
+                    input.form-control.me-2(type='text', placeholder='Search', name="q", pattern="[A-Za-z0-9]+")
                     button.btn.btn-outline-success(type='submit') Search
                 if user 
                     .navbar-nav.me-auto.mb-lg-0.info-user
                         h6(onclick=`location.href="/post/user/${user._id}"`) #{user.email}
+                        if notify && notify.length > 0
+                            div.dropdown-content
+                                for item in notify
+                                    a(href="#") #{item.content}
+                                
                     button.btn.btn-primary(onclick="location.href='/logout/dz9O7rfG629JL82P8ury'") Logout
                 else 
                     ul.navbar-nav.ms-auto.mb-2.mb-lg-0

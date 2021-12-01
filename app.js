@@ -10,10 +10,12 @@ app.use(express.static("public"));
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
-var csurf = require('csurf');
+var csurf = require("csurf");
+const mongoSanitize = require("express-mongo-sanitize");
 
 // Services
 const postService = require("./services/post.service");
+const notifyService = require("./services/notify.service");
 
 // Middlewares
 const authMiddleware = require("./Middlewares/authentication.middleware");
@@ -47,6 +49,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("views", "./views"); // view
 app.use(cookieParser(process.env.SECRET_COOKIES));
 app.use(csurf({ cookie: true }));
+// app.use(
+//   mongoSanitize({
+//     replaceWith: '_',
+//   }),
+// );
 
 app.use(
   session({
@@ -65,14 +72,18 @@ app.get("/", authMiddleware.requireUser, async (req, res) => {
   }
 
   const allPosts = await postService.getPostByPage(page);
-  // console.log(allPosts);
   const allPages = await postService.getNumberOfPost();
+
+  const userId = req.signedCookies.userId;
+  const notify = await notifyService.GetNotifyNotRead(userId);
+  // console.log(notify);
 
   res.render("home", {
     user: res.locals.user,
     posts: allPosts,
     allPages: allPages,
     currentPage: page,
+    notify: notify,
     showTitle: true,
     layout: false,
     csrf: req.csrfToken(),
