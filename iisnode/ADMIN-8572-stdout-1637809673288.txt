@@ -1,4 +1,0 @@
-The app is listening at port \\.\pipe\316f3379-57e0-41b6-b003-808122c18d1a
-Ket noi database thanh cong!
-Find  user successful!
-Find user failed!
