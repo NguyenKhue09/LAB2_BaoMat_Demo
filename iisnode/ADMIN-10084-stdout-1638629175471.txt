@@ -252,3 +252,66 @@ Get all post success
 Find  admin successful!
 Get all post of user successful!
 Get all post of user successful!
+Get all post of user successful!
+Get post successful!
+619e02262bf056fc782f7fba
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+61a052890c5e4a90b2328e78
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+61a053060c5e4a90b2328e81
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+61a055013a8a5f82c65becb6
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+61a055323a8a5f82c65becbf
+Get post successful!
+{ deletedCount: 1 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+61a0554c3a8a5f82c65becc8
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
