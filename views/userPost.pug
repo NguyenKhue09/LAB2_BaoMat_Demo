@@ -1,0 +1,84 @@
+extends ./header.pug
+block content 
+    .container
+         section(style='background-color: #eee;')
+            .container.my-5.py-5
+                .row.d-flex.justify-content-center
+                    .col-md-12.col-lg-10.col-xl-8
+                        if posts && posts.length > 0
+                            for post in posts 
+                                .card.mb-3
+                                    .card-body
+                                        .d-flex.justify-content-between.align-items-center
+                                            div.d-flex.flex-start.align-items-center
+                                                img.rounded-circle.shadow-1-strong.me-3(src='https://toigingiuvedep.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg', alt='avatar', width='60', height='60')
+                                                div
+                                                    h6.fw-bold.text-primary.mb-1 #{post.userPostId.email}
+                                                    input.getIdPost(type='hidden', name='idpost', value=post._id)
+                                            div 
+                                                button.btn-light.btn.btn-update-post(type='button',title="update" data-toggle='modal',
+                                                 data-target='#updatePostModal', data-id=post._id, data-name=post.title, data-code= post.description)
+                                                    i.fas.fa-edit
+                                                button.btn-light.btn.ms-1.btn-delete-post(type='button', data-toggle='modal', data-target='#delete-post', data-id=post._id)    
+                                                    i.fas.fa-trash-alt
+                                        h5.mt-2(style='font-weight: bold;') #{post.title}
+                                        p #{post.description}
+                                        form#updatePostModal.modal.fade(method="post" action="/post/updatePost")                 
+                                            .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                                                .modal-content
+                                                    .modal-header
+                                                        h4.modal-title.font-weight-bold Update 
+                                                        button.close(type='button', data-dismiss='modal') &times;
+                                                    .modal-body
+                                                        .row
+                                                            .col-sm-12
+                                                                    label Title
+                                                                        span.text-danger * 
+                                                                    input.form-control.name-post(type="text" name="title"  required)
+                                                                    input(type="hidden" name="_csrf" value=csrf)
+                                                                    label Content
+                                                                        span.text-danger * 
+                                                                    input.form-control.code-post(type="text" name="description"  required)
+
+                                                    .modal-footer.d-flex.justify-content-center
+                                                        //- input(type="hidden" name="_csrf" value=csrf)
+                                                        button.btn.btn-secondary(type="button" data-dismiss="modal") Close
+                                                        button.btn.btn-outline-primary.btn-update(type='submit' name="id") Save
+                                        form#delete-post.modal.fade(method="post" action="/post/deletePost")
+                                            .modal-dialog
+                                                .modal-content
+                                                    .modal-header
+                                                        h4.modal-title.font-weight-bold Delete
+                                                        button.close(type='button', data-dismiss='modal') &times;
+                                                    .modal-body
+                                                        p Are you sure to delete this post?
+                                                    .modal-footer.d-flex.justify-content-center
+                                                        //- input(type="hidden" name="_csrf" value=csrf)
+                                                        button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+                                                        input(type="hidden" name="_csrf" value=csrf)
+                                                        button.btn.btn-danger.confirm-delete-post(type='submit' name="postId") Delete
+
+    script.
+        var btn_del_airport = document.querySelectorAll('.btn-delete-post');
+        var btn_update = document.querySelectorAll('.btn-update-post');
+
+        btn_del_airport.forEach((e,index) => {
+            e.addEventListener('click',function (){
+                const id = e.dataset.id;
+                document.querySelector('.confirm-delete-post').value = id;
+            })
+        });
+
+        btn_update.forEach((e,index) => {
+            e.addEventListener('click',function (){
+                const id = e.dataset.id
+                const code = e.dataset.code
+                const name = e.dataset.name
+                
+                document.querySelector('.btn-update').value = id;
+                document.querySelector('.code-post').value = code;
+                document.querySelector('.name-post').value = name;
+                //- e.style.backgroundColor = "red";
+                
+            })
+        });

@@ -1,0 +1,35 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  script(src='https://kit.fontawesome.com/64d58efce2.js', crossorigin='anonymous')
+  link(rel='stylesheet', type='text/css', href='/styles/auth.css')
+  title Sign in - Sign up Form
+.container
+  .forms-container
+    .signin-signup
+      form.sign-in-form(action='/login', method='post')
+        h2.title Sign in
+        .input-field
+          i.fas.fa-envelope
+          input(type='email', placeholder='Email', name='email')
+          input(type="hidden" name="_csrf" value=csrf)
+        .input-field
+          i.fas.fa-lock
+          input(type='password', placeholder='Password', name='password')
+        input.btn.solid(type='submit', value='Login')
+        p.social-text Or Sign in with social platforms
+        .social-media
+          a.social-icon(href='#')
+            i.fab.fa-facebook-f
+          a.social-icon(href='#')
+            i.fab.fa-twitter
+          a.social-icon(href='#')
+            i.fab.fa-google
+          a.social-icon(href='#')
+            i.fab.fa-linkedin-in
+  .panels-container
+    .panel.left-panel
+      .content
+        h3 New here ?
+        p Something text
+        button#sign-up-btn.btn.transparent(onclick="location.href='/signup'") Sign up
