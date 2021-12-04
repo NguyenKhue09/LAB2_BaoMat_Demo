@@ -1,0 +1,74 @@
+The app is listening at port \\.\pipe\f5ba7e50-734a-4667-aa7b-80b36b4b121c
+Ket noi database thanh cong!
+Find  user successful!
+{
+  _id: new ObjectId("618b2e5da5dda9ce781eca4e"),
+  email: 'test105@gmail.com',
+  password: '123',
+  createdAt: 2021-11-10T02:28:45.517Z,
+  updatedAt: 2021-11-10T02:28:45.517Z,
+  __v: 0
+}
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+61a733f2311ad72fea759001
+Get post successful!
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+61a73454677ff61ce0ae72a5
+Get post successful!
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+61a73406311ad72fea759025
+Get post successful!
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+61a733fc311ad72fea759013
+Get post successful!
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+{
+  _id: new ObjectId("61ab292070ff98f115b16ff8"),
+  email: 'test789@gmail.com',
+  password: '123456',
+  createdAt: 2021-12-04T08:38:56.652Z,
+  updatedAt: 2021-12-04T08:38:56.652Z,
+  __v: 0
+}
+Find  user successful!
+Get all post success
+Find  admin successful!
+Add new post successful!
+Created post
+Find  user successful!
+Get all post success
+Find  admin successful!
+q:  NoSQL
+Get all post success
+Searching post by name successfully

@@ -1,0 +1,209 @@
+The app is listening at port \\.\pipe\22376c30-b926-4ef6-9949-81dcfb32ac38
+Ket noi database thanh cong!
+Find  user successful!
+{
+  _id: new ObjectId("618b2e5da5dda9ce781eca4e"),
+  email: 'test105@gmail.com',
+  password: '123',
+  createdAt: 2021-11-10T02:28:45.517Z,
+  updatedAt: 2021-11-10T02:28:45.517Z,
+  __v: 0
+}
+Find  user successful!
+Get all post success
+Find  admin successful!
+q:  csrf
+Get all post success
+Searching post by name successfully
+Get post successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+{
+  _id: new ObjectId("61792686534d67280f030d1f"),
+  email: 'test99@gmail.com',
+  password: '123',
+  createdAt: 2021-10-27T10:14:30.230Z,
+  updatedAt: 2021-10-27T10:14:30.230Z,
+  __v: 0
+}
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Register user successful!
+Find  user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Add new post successful!
+Created post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get post successful!
+Add comment to post successful
+Add comment successful!
+Added comment to post
+Get post successful!
+Find  user successful!
+Add new notify successful!
+Add notification successfully
+Get post successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+q:  csrf
+Get all post success
+Searching post by name successfully
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Updated post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+61ab26bd70ff98f115b16f47
+{ deletedCount: 1 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get post successful!
+Add comment to post successful
+Add comment successful!
+Added comment to post
+Get post successful!
+Find  user successful!
+Add new notify successful!
+Add notification successfully
+Get post successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+{
+  _id: new ObjectId("618b2e5da5dda9ce781eca4e"),
+  email: 'test105@gmail.com',
+  password: '123',
+  createdAt: 2021-11-10T02:28:45.517Z,
+  updatedAt: 2021-11-10T02:28:45.517Z,
+  __v: 0
+}
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get post successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+E11000 duplicate key error collection: XSS.users index: email_1 dup key: { email: "test100@gmail.com" }
+Find  user successful!
+Register user successful!
+Find  user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Add new post successful!
+Created post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get post successful!
+Add comment to post successful
+Add comment successful!
+Added comment to post
+Get post successful!
+Find  user successful!
+Add new notify successful!
+Add notification successfully
+Get post successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+q:  csrf
+Get all post success
+Searching post by name successfully
+Get post successful!
+Add comment to post successful
+Add comment successful!
+Added comment to post
+Get post successful!
+Find  user successful!
+Add new notify successful!
+Add notification successfully
+Get post successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Updated post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+61ab294870ff98f115b17003
+{ deletedCount: 1 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+{
+  _id: new ObjectId("618b2e5da5dda9ce781eca4e"),
+  email: 'test105@gmail.com',
+  password: '123',
+  createdAt: 2021-11-10T02:28:45.517Z,
+  updatedAt: 2021-11-10T02:28:45.517Z,
+  __v: 0
+}
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!

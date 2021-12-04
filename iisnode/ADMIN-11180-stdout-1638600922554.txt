@@ -1,0 +1,27 @@
+The app is listening at port \\.\pipe\f81dc973-bb4a-4180-9109-67f6b5ce5290
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at NativeConnection.Connection.openUri (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\connection.js:797:32)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\index.js:330:10
+    at promiseOrCallback (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\helpers\promiseOrCallback.js:10:12)
+    at Mongoose._promiseOrCallback (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\index.js:1151:10)
+    at Mongoose.connect (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\index.js:329:20)
+    at connectDB (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\config\db-connect.js:12:14)
+    at Object.<anonymous> (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\app.js:29:1)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.qcisp.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.qcisp.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.qcisp.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-12c3uq-shard-0',
+    logicalSessionTimeoutMinutes: undefined
+  }
+}

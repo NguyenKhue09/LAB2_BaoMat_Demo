@@ -1,0 +1,8 @@
+The app is listening at port \\.\pipe\41009f15-d756-4809-a4ed-dfac3e6fe31e
+Ket noi database thanh cong!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!

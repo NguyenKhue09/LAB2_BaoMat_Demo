@@ -1,0 +1,29 @@
+The app is listening at port \\.\pipe\0410f0a0-689c-4eaf-a6de-b9ddb5b94245
+Ket noi database thanh cong!
+Find  user successful!
+{
+  _id: new ObjectId("61792686534d67280f030d1f"),
+  email: 'test99@gmail.com',
+  password: '123',
+  createdAt: 2021-10-27T10:14:30.230Z,
+  updatedAt: 2021-10-27T10:14:30.230Z,
+  __v: 0
+}
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Updated post
+Get all post of user successful!
+Updated post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Updated post
+Find  user successful!
+Get all post success
+Find  admin successful!

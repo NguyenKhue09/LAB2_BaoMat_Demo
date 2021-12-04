@@ -1,0 +1,486 @@
+(node:10084) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+ForbiddenError: invalid csrf token
+    at csrf (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\csurf\index.js:112:19)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handle [as handle_request] (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:317:13)
+    at D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\express\lib\router\index.js:284:7
