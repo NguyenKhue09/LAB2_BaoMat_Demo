@@ -1,0 +1,317 @@
+The app is listening at port \\.\pipe\8b3d53a2-babf-4ad9-a854-29e6281f2cea
+Ket noi database thanh cong!
+Updated post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+CastError: Cast to ObjectId failed for value "{ _ne: '61a736ff8f61cba2b642679u' }" (type Object) at path "_id" for model "Post"
+    at model.Query.exec (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4545:21)
+    at model.Query.Query.then (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4644:15) {
+  messageFormat: undefined,
+  stringValue: `"{ _ne: '61a736ff8f61cba2b642679u' }"`,
+  kind: 'ObjectId',
+  value: { _ne: '61a736ff8f61cba2b642679u' },
+  path: '_id',
+  reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
+      at new BSONTypeError (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\bson\lib\error.js:39:42)
+      at new ObjectId (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\bson\lib\objectid.js:62:23)
+      at castObjectId (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schema\objectid.js:245:12)
+      at ObjectId.SchemaType.applySetters (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1135:12)
+      at ObjectId.SchemaType._castForQuery (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1567:15)
+      at ObjectId.SchemaType.castForQuery (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1557:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1534:20)
+      at cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\cast.js:280:34)
+      at model.Query.Query.cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4968:12),
+  valueType: 'Object'
+}
+Falied in updating post
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Updated post
+Get post successful!
+61a7218c311ad72fea758ebb
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get all post of user successful!
+Get all post of user successful!
+Updated post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get all post of user successful!
+Get all post of user successful!
+CastError: Cast to ObjectId failed for value "{ _ne: '61a736ff8f61cba2b642679t' }" (type Object) at path "_id" for model "Post"
+    at model.Query.exec (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4545:21)
+    at model.Query.Query.then (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4644:15) {
+  messageFormat: undefined,
+  stringValue: `"{ _ne: '61a736ff8f61cba2b642679t' }"`,
+  kind: 'ObjectId',
+  value: { _ne: '61a736ff8f61cba2b642679t' },
+  path: '_id',
+  reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
+      at new BSONTypeError (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\bson\lib\error.js:39:42)
+      at new ObjectId (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\bson\lib\objectid.js:62:23)
+      at castObjectId (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schema\objectid.js:245:12)
+      at ObjectId.SchemaType.applySetters (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1135:12)
+      at ObjectId.SchemaType._castForQuery (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1567:15)
+      at ObjectId.SchemaType.castForQuery (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1557:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1534:20)
+      at cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\cast.js:280:34)
+      at model.Query.Query.cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4968:12),
+  valueType: 'Object'
+}
+Falied in updating post
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get post successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Updated post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+CastError: Cast to ObjectId failed for value "{ _ne: '61a736ff8f61cba2b642679c' }" (type Object) at path "_id" for model "Post"
+    at model.Query.exec (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4545:21)
+    at model.Query.Query.then (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4644:15) {
+  messageFormat: undefined,
+  stringValue: `"{ _ne: '61a736ff8f61cba2b642679c' }"`,
+  kind: 'ObjectId',
+  value: { _ne: '61a736ff8f61cba2b642679c' },
+  path: '_id',
+  reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
+      at new BSONTypeError (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\bson\lib\error.js:39:42)
+      at new ObjectId (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\bson\lib\objectid.js:62:23)
+      at castObjectId (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schema\objectid.js:245:12)
+      at ObjectId.SchemaType.applySetters (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1135:12)
+      at ObjectId.SchemaType._castForQuery (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1567:15)
+      at ObjectId.SchemaType.castForQuery (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1557:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1534:20)
+      at cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\cast.js:280:34)
+      at model.Query.Query.cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4968:12),
+  valueType: 'Object'
+}
+Falied in updating post
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get post successful!
+Updated post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Updated post
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Updated post
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+CastError: Cast to ObjectId failed for value "{ _ne: '61a736ff8f61cba2b642679c' }" (type Object) at path "_id" for model "Post"
+    at model.Query.exec (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4545:21)
+    at model.Query.Query.then (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4644:15) {
+  messageFormat: undefined,
+  stringValue: `"{ _ne: '61a736ff8f61cba2b642679c' }"`,
+  kind: 'ObjectId',
+  value: { _ne: '61a736ff8f61cba2b642679c' },
+  path: '_id',
+  reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
+      at new BSONTypeError (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\bson\lib\error.js:39:42)
+      at new ObjectId (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\bson\lib\objectid.js:62:23)
+      at castObjectId (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schema\objectid.js:245:12)
+      at ObjectId.SchemaType.applySetters (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1135:12)
+      at ObjectId.SchemaType._castForQuery (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1567:15)
+      at ObjectId.SchemaType.castForQuery (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1557:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1534:20)
+      at cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\cast.js:280:34)
+      at model.Query.Query.cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4968:12),
+  valueType: 'Object'
+}
+Falied in updating post
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get post successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Updated post
+Updated post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+CastError: Cast to ObjectId failed for value "{ _ne: '61a736ff8f61cba2b642679c' }" (type Object) at path "_id" for model "Post"
+    at model.Query.exec (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4545:21)
+    at model.Query.Query.then (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4644:15) {
+  messageFormat: undefined,
+  stringValue: `"{ _ne: '61a736ff8f61cba2b642679c' }"`,
+  kind: 'ObjectId',
+  value: { _ne: '61a736ff8f61cba2b642679c' },
+  path: '_id',
+  reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
+      at new BSONTypeError (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\bson\lib\error.js:39:42)
+      at new ObjectId (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\bson\lib\objectid.js:62:23)
+      at castObjectId (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schema\objectid.js:245:12)
+      at ObjectId.SchemaType.applySetters (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1135:12)
+      at ObjectId.SchemaType._castForQuery (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1567:15)
+      at ObjectId.SchemaType.castForQuery (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1557:15)
+      at ObjectId.SchemaType.castForQueryWrapper (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\schematype.js:1534:20)
+      at cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\cast.js:280:34)
+      at model.Query.Query.cast (D:\Tai_lieu_mon_hoc\webDeveloper\Project\XSS_Demo\node_modules\mongoose\lib\query.js:4968:12),
+  valueType: 'Object'
+}
+Falied in updating post
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get post successful!
+Add comment to post successful
+Add comment successful!
+Added comment to post
+Get post successful!
+Find  user successful!
+Add new notify successful!
+Add notification successfully
+Get post successful!
+Find  user successful!
+{
+  _id: new ObjectId("61792686534d67280f030d1f"),
+  email: 'test99@gmail.com',
+  password: '123',
+  createdAt: 2021-10-27T10:14:30.230Z,
+  updatedAt: 2021-10-27T10:14:30.230Z,
+  __v: 0
+}
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Updated post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get all post of user successful!
+Get all post of user successful!
+Get post successful!
+619e02262bf056fc782f7fba
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+61a052890c5e4a90b2328e78
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+61a053060c5e4a90b2328e81
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+61a055013a8a5f82c65becb6
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+61a055323a8a5f82c65becbf
+Get post successful!
+{ deletedCount: 1 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Get all post of user successful!
+Get post successful!
+61a0554c3a8a5f82c65becc8
+{ deletedCount: 0 }
+Deleted all comment belong to post successful
+Delete comment belong to post successful
+Deleted post
+Find  user successful!
+Get all post success
+Find  admin successful!
+Find  user successful!
+Get all post success
+Find  admin successful!

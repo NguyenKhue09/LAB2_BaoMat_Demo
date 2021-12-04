@@ -42,3 +42,8 @@
   text-overflow: ellipsis;
   word-break: break-word;
 } */
+@media screen and (max-width: 768px) {
+  .dropdown-content {
+    top: 120px;
+  }
+}
